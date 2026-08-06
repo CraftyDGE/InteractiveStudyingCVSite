@@ -1,10 +1,11 @@
 /* ==========================================================================
-   Interactive Engine & UI Logic - InteractiveStudyingCVSite
+   Multi-Page Interactive Engine - InteractiveStudyingCVSite
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
   initTheme();
   initLanguage();
+  initActiveNavLink();
   initTabs();
   initCounters();
 });
@@ -18,18 +19,22 @@ function initTheme() {
   document.documentElement.setAttribute('data-theme', currentTheme);
   updateThemeIcon(currentTheme);
 
-  themeBtn.addEventListener('click', () => {
-    const activeTheme = document.documentElement.getAttribute('data-theme');
-    const newTheme = activeTheme === 'dark' ? 'light' : 'dark';
-    document.documentElement.setAttribute('data-theme', newTheme);
-    localStorage.setItem('site-theme', newTheme);
-    updateThemeIcon(newTheme);
-  });
+  if (themeBtn) {
+    themeBtn.addEventListener('click', () => {
+      const activeTheme = document.documentElement.getAttribute('data-theme');
+      const newTheme = activeTheme === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('site-theme', newTheme);
+      updateThemeIcon(newTheme);
+    });
+  }
 }
 
 function updateThemeIcon(theme) {
   const themeBtn = document.getElementById('themeToggle');
-  themeBtn.innerHTML = theme === 'dark' ? '<i class="fa-solid fa-sun"></i>' : '<i class="fa-solid fa-moon"></i>';
+  if (themeBtn) {
+    themeBtn.innerHTML = theme === 'dark' ? '<i class="fa-solid fa-sun"></i>' : '<i class="fa-solid fa-moon"></i>';
+  }
 }
 
 /* --------------------------------------------------------------------------
@@ -65,7 +70,24 @@ function setLanguage(lang) {
 }
 
 /* --------------------------------------------------------------------------
-   3. Interactive Tabs System (Experience / Skills / Education)
+   3. Active Navigation Link Detector
+   -------------------------------------------------------------------------- */
+function initActiveNavLink() {
+  const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+  const navLinks = document.querySelectorAll('.nav-link');
+
+  navLinks.forEach(link => {
+    const href = link.getAttribute('href');
+    if (href === currentPath || (currentPath === '' && href === 'index.html')) {
+      link.classList.add('active');
+    } else if (!href.startsWith('#')) {
+      link.classList.remove('active');
+    }
+  });
+}
+
+/* --------------------------------------------------------------------------
+   4. Interactive Tabs System
    -------------------------------------------------------------------------- */
 function initTabs() {
   const tabBtns = document.querySelectorAll('.tab-btn');
@@ -79,16 +101,20 @@ function initTabs() {
       tabContents.forEach(c => c.classList.remove('active'));
 
       btn.classList.add('active');
-      document.getElementById(targetId).classList.add('active');
+      const targetEl = document.getElementById(targetId);
+      if (targetEl) {
+        targetEl.classList.add('active');
+      }
     });
   });
 }
 
 /* --------------------------------------------------------------------------
-   4. Animated Stat Counters
+   5. Animated Stat Counters
    -------------------------------------------------------------------------- */
 function initCounters() {
   const counters = document.querySelectorAll('.counter');
+  if (counters.length === 0) return;
   
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -117,7 +143,7 @@ function initCounters() {
 }
 
 /* --------------------------------------------------------------------------
-   5. Interactive Live Simulators Modal Engine
+   6. Interactive Live Simulators Modal Engine
    -------------------------------------------------------------------------- */
 function openSimulator(type) {
   const modal = document.getElementById('simulatorModal');
@@ -125,6 +151,7 @@ function openSimulator(type) {
   const subtitle = document.getElementById('modalSubtitle');
   const body = document.getElementById('simulatorBody');
 
+  if (!modal) return;
   modal.classList.add('active');
 
   if (type === 'hats') {
@@ -162,32 +189,31 @@ function openSimulator(type) {
     `;
     setTimeout(initPhysicsCanvas, 100);
   } else if (type === 'stem') {
-    title.innerText = 'STEM Licensing Configurator';
-    subtitle.innerText = 'Select school capacity to calculate custom module access';
+    title.innerText = 'Minecraft Edu & Secondary School Kits';
+    subtitle.innerText = 'Custom gamification for Bulgarian secondary schools';
     body.innerHTML = `
       <div style="text-align: left; max-width: 450px; margin: 0 auto;">
-        <label style="display: block; font-weight: 700; margin-bottom: 0.5rem;">Select School Type:</label>
-        <select id="schoolType" onchange="calcStemConfig()" style="width: 100%; padding: 10px; border-radius: 8px; background: var(--bg-primary); color: var(--text-primary); border: 1px solid var(--border-color); margin-bottom: 1rem;">
-          <option value="primary">Primary School (Grades 1-4)</option>
-          <option value="middle" selected>Middle School (Grades 5-8)</option>
-          <option value="high">High School / STEM Academy (Grades 9-12)</option>
-        </select>
-        <div id="stemResult" style="background: rgba(99,102,241,0.1); border: 1px solid var(--accent-primary); padding: 1.2rem; border-radius: 12px;">
-          <strong>Included Simulators:</strong> Physics Trajectory, Minecraft Edu World, 6 Thinking Hats.<br>
-          <strong>Teacher Licenses:</strong> Unlimited.
+        <div style="background: rgba(16,185,129,0.1); border: 1px solid var(--accent-emerald); padding: 1.2rem; border-radius: 12px; margin-bottom: 1rem;">
+          <strong>Web Services Partner Installations:</strong> Hardware & software setups in 20+ secondary schools.<br>
+          <strong>Custom Gamification:</strong> Minecraft Education scenarios, business games, and STEM modules.
         </div>
+        <a href="contact.html" class="btn btn-primary" style="width: 100%; justify-content: center;">
+          Inquire for Your School
+        </a>
       </div>
     `;
   }
 }
 
 function closeSimulator() {
-  document.getElementById('simulatorModal').classList.remove('active');
+  const modal = document.getElementById('simulatorModal');
+  if (modal) modal.classList.remove('active');
 }
 
 /* 6 Thinking Hats Interactivity */
 function inspectHat(name, desc, bg, textCol) {
   const hatDetail = document.getElementById('hatDetail');
+  if (!hatDetail) return;
   hatDetail.style.background = bg;
   hatDetail.style.color = textCol;
   hatDetail.innerHTML = `
@@ -219,7 +245,6 @@ function drawTrajectory() {
   if (!ctx) return;
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-  // Draw Ground
   ctx.strokeStyle = '#1e293b';
   ctx.lineWidth = 2;
   ctx.beginPath();
@@ -227,7 +252,6 @@ function drawTrajectory() {
   ctx.lineTo(canvas.width, 200);
   ctx.stroke();
 
-  // Draw Trajectory Curve
   ctx.strokeStyle = '#6366f1';
   ctx.setLineDash([5, 5]);
   ctx.beginPath();
@@ -247,7 +271,6 @@ function drawTrajectory() {
   ctx.stroke();
   ctx.setLineDash([]);
 
-  // Draw Cannon
   ctx.fillStyle = '#06b6d4';
   ctx.beginPath();
   ctx.arc(30, 190, 10, 0, Math.PI * 2);
@@ -283,21 +306,9 @@ function firePhysics() {
   animate();
 }
 
-function calcStemConfig() {
-  const type = document.getElementById('schoolType').value;
-  const res = document.getElementById('stemResult');
-  if (type === 'primary') {
-    res.innerHTML = '<strong>Included Simulators:</strong> Basic Minecraft Edu & Elementary Physics.<br><strong>Teacher Licenses:</strong> Up to 5 teachers.';
-  } else if (type === 'middle') {
-    res.innerHTML = '<strong>Included Simulators:</strong> Physics Trajectory, Minecraft Edu World, 6 Thinking Hats.<br><strong>Teacher Licenses:</strong> Unlimited.';
-  } else {
-    res.innerHTML = '<strong>Included Simulators:</strong> Full Enterprise Suite, Custom Physics Engines, Advanced Thinking Methodology.<br><strong>Teacher Licenses:</strong> Unlimited + Priority Support.';
-  }
-}
-
-/* 6. Contact Form Handler */
+/* 7. Contact Form Handler */
 function handleContact(e) {
   e.preventDefault();
-  alert('Thank you for reaching out! Your inquiry for InteractiveStudyingCVSite has been received.');
+  alert('Thank you for your message! Your inquiry has been received by Interactive Studying.');
   e.target.reset();
 }

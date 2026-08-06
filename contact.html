@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Inquiries | Interactive Studying</title>
+  <meta name="description" content="Get in touch with Deyan Yalamov, CEO of Interactive Studying EOOD and Teaching Assistant at FEBA, Sofia University.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       Header & Navigation
+       ========================================================================== -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+        <div class="logo-text">Interactive<span>Studying</span></div>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link" data-en="Home" data-bg="Начало">Home</a></li>
+          <li><a href="ceo.html" class="nav-link" data-en="CEO Profile" data-bg="За Управителя">CEO Profile</a></li>
+          <li><a href="projects.html" class="nav-link" data-en="Simulators & STEM" data-bg="Симулатори и STEM">Simulators & STEM</a></li>
+          <li><a href="contact.html" class="nav-link active" data-en="Contact" data-bg="Контакти">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-switch">
+          <button class="lang-btn active" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="bg">BG</button>
+        </div>
+        <button class="theme-toggle" id="themeToggle" title="Toggle Light/Dark Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section class="page-banner">
+    <div class="container">
+      <div class="badge">
+        <i class="fa-solid fa-paper-plane"></i>
+        <span data-en="Consultations & Inquiries" data-bg="Консултации и Запитвания">Consultations & Inquiries</span>
+      </div>
+      <h1 class="page-title" data-en="Get in Touch" data-bg="Свържете се с нас">Get in Touch</h1>
+      <p class="page-subtitle" data-en="Inquire about secondary school STEM center setups, custom gamification, or academic collaborations." data-bg="Запитвания за STEM центрове в училища, геймификация и академично сътрудничество.">
+        Inquire about secondary school STEM center setups, custom gamification, or academic collaborations.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Contact Form & Info Layout
+       ========================================================================== -->
+  <section class="section">
+    <div class="container" style="max-width: 1000px;">
+      <div style="display: grid; grid-template-columns: 1fr 1.3fr; gap: 3rem;">
+        
+        <!-- Company & Contact Direct Info -->
+        <div>
+          <h3 style="font-size: 1.5rem; font-weight: 800; margin-bottom: 1rem;" data-en="Company Details" data-bg="Данни за Дружеството">Company Details</h3>
+          <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1.5rem;" data-en="Direct official contacts for „ИНТЕРАКТИВ СТЪДИЙНГ“ ЕООД." data-bg="Директни официални контакти на „Интерактив Стъдинг“ ЕООД.">
+            Direct official contacts for „ИНТЕРАКТИВ СТЪДИЙНГ“ ЕООД.
+          </p>
+
+          <div style="display: flex; flex-direction: column; gap: 1.2rem;">
+            <div style="background: var(--bg-card); border: 1px solid var(--border-color); padding: 1.2rem; border-radius: var(--radius-lg); display: flex; gap: 1rem; align-items: center;">
+              <div style="width: 44px; height: 44px; border-radius: 50%; background: rgba(99,102,241,0.1); color: var(--accent-primary); display: flex; align-items: center; justify-content: center; font-size: 1.2rem;"><i class="fa-solid fa-building"></i></div>
+              <div>
+                <strong style="display: block; font-size: 0.95rem;" data-en="Registered Company" data-bg="Регистрирано Дружество">Registered Company</strong>
+                <span style="font-size: 0.85rem; color: var(--text-secondary);">„ИНТЕРАКТИВ СТЪДИЙНГ“ ЕООД (UIC 208796163)</span>
+              </div>
+            </div>
+
+            <div style="background: var(--bg-card); border: 1px solid var(--border-color); padding: 1.2rem; border-radius: var(--radius-lg); display: flex; gap: 1rem; align-items: center;">
+              <div style="width: 44px; height: 44px; border-radius: 50%; background: rgba(6,182,212,0.1); color: var(--accent-secondary); display: flex; align-items: center; justify-content: center; font-size: 1.2rem;"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <strong style="display: block; font-size: 0.95rem;" data-en="Email Address" data-bg="Имейл Адрес">Email Address</strong>
+                <span style="font-size: 0.85rem; color: var(--text-secondary);">deyan.yalamov@gmail.com</span>
+              </div>
+            </div>
+
+            <div style="background: var(--bg-card); border: 1px solid var(--border-color); padding: 1.2rem; border-radius: var(--radius-lg); display: flex; gap: 1rem; align-items: center;">
+              <div style="width: 44px; height: 44px; border-radius: 50%; background: rgba(16,185,129,0.1); color: var(--accent-emerald); display: flex; align-items: center; justify-content: center; font-size: 1.2rem;"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <strong style="display: block; font-size: 0.95rem;" data-en="Phone" data-bg="Телефон">Phone</strong>
+                <span style="font-size: 0.85rem; color: var(--text-secondary);">+359 89 313 684</span>
+              </div>
+            </div>
+
+            <div style="background: var(--bg-card); border: 1px solid var(--border-color); padding: 1.2rem; border-radius: var(--radius-lg); display: flex; gap: 1rem; align-items: center;">
+              <div style="width: 44px; height: 44px; border-radius: 50%; background: rgba(245,158,11,0.1); color: var(--accent-amber); display: flex; align-items: center; justify-content: center; font-size: 1.2rem;"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <strong style="display: block; font-size: 0.95rem;" data-en="Location" data-bg="Локация">Location</strong>
+                <span style="font-size: 0.85rem; color: var(--text-secondary);" data-en="Sofia, Bulgaria" data-bg="София, България">Sofia, Bulgaria</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Form -->
+        <form id="contactForm" onsubmit="handleContact(event)" style="background: var(--bg-card); border: 1px solid var(--border-color); padding: 2.5rem; border-radius: var(--radius-xl);">
+          <div style="margin-bottom: 1.2rem;">
+            <label style="display: block; font-weight: 700; margin-bottom: 0.5rem; font-size: 0.9rem;" data-en="Your Name" data-bg="Вашето Име">Your Name</label>
+            <input type="text" required placeholder="e.g. Deyan Petrov" style="width: 100%; padding: 12px 16px; border-radius: var(--radius-md); background: var(--bg-primary); border: 1px solid var(--border-color); color: var(--text-primary); font-family: inherit;">
+          </div>
+
+          <div style="margin-bottom: 1.2rem;">
+            <label style="display: block; font-weight: 700; margin-bottom: 0.5rem; font-size: 0.9rem;" data-en="Email Address" data-bg="Имейл Адрес">Email Address</label>
+            <input type="email" required placeholder="name@institution.edu" style="width: 100%; padding: 12px 16px; border-radius: var(--radius-md); background: var(--bg-primary); border: 1px solid var(--border-color); color: var(--text-primary); font-family: inherit;">
+          </div>
+
+          <div style="margin-bottom: 1.2rem;">
+            <label style="display: block; font-weight: 700; margin-bottom: 0.5rem; font-size: 0.9rem;" data-en="Inquiry Category" data-bg="Категория Запитване">Inquiry Category</label>
+            <select style="width: 100%; padding: 12px 16px; border-radius: var(--radius-md); background: var(--bg-primary); border: 1px solid var(--border-color); color: var(--text-primary); font-family: inherit;">
+              <option data-en="STEM Center Hardware/Software Setup (Web Services)" data-bg="STEM Център Инсталация (Web Services)">STEM Center Hardware/Software Setup (Web Services)</option>
+              <option data-en="Secondary School Custom Gamification" data-bg="Геймификация за Средни Училища">Secondary School Custom Gamification</option>
+              <option data-en="FEBA Academic Collaboration" data-bg="СУ Академично Сътрудничество">FEBA Academic Collaboration</option>
+              <option data-en="General Inquiry" data-bg="Общо Запитване">General Inquiry</option>
+            </select>
+          </div>
+
+          <div style="margin-bottom: 1.5rem;">
+            <label style="display: block; font-weight: 700; margin-bottom: 0.5rem; font-size: 0.9rem;" data-en="Message Details" data-bg="Детайли на Съобщението">Message Details</label>
+            <textarea rows="4" required placeholder="Describe your inquiry..." style="width: 100%; padding: 12px 16px; border-radius: var(--radius-md); background: var(--bg-primary); border: 1px solid var(--border-color); color: var(--text-primary); font-family: inherit; resize: vertical;"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+            <i class="fa-solid fa-paper-plane"></i>
+            <span data-en="Send Message" data-bg="Изпрати Съобщение">Send Message</span>
+          </button>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-logo">Interactive<span style="color: var(--accent-primary);">Studying</span></div>
+      <p class="footer-copy">&copy; 2026 InteractiveStudyingCVSite. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
