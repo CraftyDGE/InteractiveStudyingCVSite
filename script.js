@@ -1,13 +1,12 @@
 /* ==========================================================================
-   Multi-Page Interactive Engine - InteractiveStudyingCVSite
+   Multi-Page Interactive Engine - InteractiveStudyingCVSite (PHP & Reactive)
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
   initTheme();
   initLanguage();
+  initMobileDrawer();
   initActiveNavLink();
-  initTabs();
-  initCounters();
 });
 
 /* --------------------------------------------------------------------------
@@ -38,7 +37,7 @@ function updateThemeIcon(theme) {
 }
 
 /* --------------------------------------------------------------------------
-   2. Bilingual Language Toggle (EN / BG)
+   2. Bilingual Language Toggle (EN / BG) with PHP Sync
    -------------------------------------------------------------------------- */
 function initLanguage() {
   const langBtns = document.querySelectorAll('.lang-btn');
@@ -51,6 +50,11 @@ function initLanguage() {
       const selectedLang = btn.getAttribute('data-lang');
       setLanguage(selectedLang);
       localStorage.setItem('site-lang', selectedLang);
+
+      // Update URL search param for PHP synchronization without breaking state
+      const url = new URL(window.location);
+      url.searchParams.set('lang', selectedLang);
+      window.history.replaceState({}, '', url);
     });
   });
 }
@@ -70,80 +74,57 @@ function setLanguage(lang) {
 }
 
 /* --------------------------------------------------------------------------
-   3. Active Navigation Link Detector
+   3. Reactive Mobile Slide-Out Drawer Navigation
    -------------------------------------------------------------------------- */
-function initActiveNavLink() {
-  const currentPath = window.location.pathname.split('/').pop() || 'index.html';
-  const navLinks = document.querySelectorAll('.nav-link');
+function initMobileDrawer() {
+  const hamburgerBtn = document.getElementById('hamburgerBtn');
+  const drawerClose = document.getElementById('drawerClose');
+  const mobileDrawer = document.getElementById('mobileDrawer');
+  const drawerOverlay = document.getElementById('drawerOverlay');
 
-  navLinks.forEach(link => {
-    const href = link.getAttribute('href');
-    if (href === currentPath || (currentPath === '' && href === 'index.html')) {
-      link.classList.add('active');
-    } else if (!href.startsWith('#')) {
-      link.classList.remove('active');
+  if (!hamburgerBtn || !mobileDrawer || !drawerOverlay) return;
+
+  function openDrawer() {
+    mobileDrawer.classList.add('active');
+    drawerOverlay.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeDrawer() {
+    mobileDrawer.classList.remove('active');
+    drawerOverlay.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  hamburgerBtn.addEventListener('click', openDrawer);
+  if (drawerClose) drawerClose.addEventListener('click', closeDrawer);
+  drawerOverlay.addEventListener('click', closeDrawer);
+
+  // Close drawer on escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && mobileDrawer.classList.contains('active')) {
+      closeDrawer();
     }
   });
 }
 
 /* --------------------------------------------------------------------------
-   4. Interactive Tabs System
+   4. Active Navigation Link Detector
    -------------------------------------------------------------------------- */
-function initTabs() {
-  const tabBtns = document.querySelectorAll('.tab-btn');
-  const tabContents = document.querySelectorAll('.tab-content');
+function initActiveNavLink() {
+  const currentPath = window.location.pathname.split('/').pop() || 'index.php';
+  const navLinks = document.querySelectorAll('.nav-link, .drawer-nav-link');
 
-  tabBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const targetId = btn.getAttribute('data-tab');
-
-      tabBtns.forEach(b => b.classList.remove('active'));
-      tabContents.forEach(c => c.classList.remove('active'));
-
-      btn.classList.add('active');
-      const targetEl = document.getElementById(targetId);
-      if (targetEl) {
-        targetEl.classList.add('active');
-      }
-    });
+  navLinks.forEach(link => {
+    const href = link.getAttribute('href');
+    if (href === currentPath || (currentPath === '' && href === 'index.php')) {
+      link.classList.add('active');
+    }
   });
 }
 
 /* --------------------------------------------------------------------------
-   5. Animated Stat Counters
-   -------------------------------------------------------------------------- */
-function initCounters() {
-  const counters = document.querySelectorAll('.counter');
-  if (counters.length === 0) return;
-  
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const counter = entry.target;
-        const target = +counter.getAttribute('data-target');
-        let count = 0;
-        const increment = Math.ceil(target / 40);
-
-        const updateCount = () => {
-          count += increment;
-          if (count < target) {
-            counter.innerText = count.toLocaleString() + '+';
-            setTimeout(updateCount, 30);
-          } else {
-            counter.innerText = target.toLocaleString() + (target === 100 ? '%' : '+');
-          }
-        };
-        updateCount();
-        observer.unobserve(counter);
-      }
-    });
-  }, { threshold: 0.5 });
-
-  counters.forEach(counter => observer.observe(counter));
-}
-
-/* --------------------------------------------------------------------------
-   6. Interactive Live Simulators Modal Engine
+   5. Interactive Live Simulators Engine
    -------------------------------------------------------------------------- */
 function openSimulator(type) {
   const modal = document.getElementById('simulatorModal');
@@ -197,7 +178,7 @@ function openSimulator(type) {
           <strong>Web Services Partner Installations:</strong> Hardware & software setups in 20+ secondary schools.<br>
           <strong>Custom Gamification:</strong> Minecraft Education scenarios, business games, and STEM modules.
         </div>
-        <a href="contact.html" class="btn btn-primary" style="width: 100%; justify-content: center;">
+        <a href="contact.php" class="btn btn-primary" style="width: 100%; justify-content: center;">
           Inquire for Your School
         </a>
       </div>
@@ -224,7 +205,7 @@ function inspectHat(name, desc, bg, textCol) {
 
 /* Physics Canvas Simulator Logic */
 let canvas, ctx, animationId;
-let pAngle = 45, pVel = 50, pPos = { x: 30, y: 190 }, isLaunching = false;
+let pAngle = 45, pVel = 50, pPos = { x: 30, y: 190 };
 
 function initPhysicsCanvas() {
   canvas = document.getElementById('physicsCanvas');
@@ -304,11 +285,4 @@ function firePhysics() {
     }
   }
   animate();
-}
-
-/* 7. Contact Form Handler */
-function handleContact(e) {
-  e.preventDefault();
-  alert('Thank you for your message! Your inquiry has been received by Interactive Studying.');
-  e.target.reset();
 }
