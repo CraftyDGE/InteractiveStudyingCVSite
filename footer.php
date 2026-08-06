@@ -14,7 +14,10 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <div class="footer-logo">Interactive<span style="color: var(--accent-primary);">Studying</span></div>
+      <a href="index.php" class="logo" style="justify-content: center; margin-bottom: 1rem;">
+        <img src="logo.svg" alt="Interactive Studying Logo" class="logo-img" style="height: 38px;" onerror="this.src='logo.png'">
+        <div class="logo-text">Interactive<span>Studying</span></div>
+      </a>
       <p class="footer-copy">&copy; <?php echo date('Y'); ?> InteractiveStudyingCVSite. All rights reserved.</p>
     </div>
   </footer>

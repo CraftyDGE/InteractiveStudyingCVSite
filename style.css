@@ -157,6 +157,19 @@ button {
   box-shadow: var(--shadow-glow);
 }
 
+.logo-img {
+  height: 42px;
+  width: auto;
+  max-width: 180px;
+  object-fit: contain;
+  display: block;
+  transition: transform var(--transition-fast);
+}
+
+.logo-img:hover {
+  transform: scale(1.05);
+}
+
 .logo-text span {
   background: var(--gradient-brand);
   -webkit-background-clip: text;

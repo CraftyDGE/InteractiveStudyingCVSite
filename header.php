@@ -31,7 +31,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
   <header class="header">
     <div class="container header-container">
       <a href="index.php" class="logo">
-        <div class="logo-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+        <img src="logo.svg" alt="Interactive Studying Logo" class="logo-img" onerror="this.src='logo.png'">
         <div class="logo-text">Interactive<span>Studying</span></div>
       </a>
 
@@ -72,7 +72,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
   <aside class="mobile-drawer" id="mobileDrawer">
     <div class="drawer-header">
       <a href="index.php" class="logo" style="font-size: 1.15rem;">
-        <div class="logo-icon" style="width: 32px; height: 32px; font-size: 1rem;"><i class="fa-solid fa-graduation-cap"></i></div>
+        <img src="logo.svg" alt="Interactive Studying Logo" class="logo-img" style="height: 34px;" onerror="this.src='logo.png'">
         <div class="logo-text">Interactive<span>Studying</span></div>
       </a>
       <button class="drawer-close" id="drawerClose">&times;</button>
