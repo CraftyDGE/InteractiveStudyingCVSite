@@ -48,8 +48,8 @@
 
         <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
           <a href="contact.php" class="btn btn-primary">
-            <i class="fa-solid fa-calendar-check"></i>
-            <span data-en="Schedule Consultation" data-bg="Заяви Консултация">Schedule Consultation</span>
+            <i class="fa-solid fa-envelope"></i>
+            <span data-en="Contact" data-bg="Контакти">Contact</span>
           </a>
           <a href="projects.php" class="btn btn-secondary">
             <i class="fa-solid fa-layer-group"></i>

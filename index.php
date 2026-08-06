@@ -1,19 +1,19 @@
 <?php include 'header.php'; ?>
 
   <!-- ==========================================================================
-       Clean Hero Skeleton Section (Without Numerical Data)
+       Clean Hero Section
        ========================================================================== -->
   <section class="hero">
     <div class="hero-bg-glow"></div>
     <div class="container hero-content-grid">
       <div>
         <h1 class="hero-title">
-          <span data-en="Empowering Education Through" data-bg="Модернизиране на образованието чрез">Empowering Education Through</span><br>
-          <span class="gradient-text" data-en="Interactive Simulators" data-bg="Интерактивни Симулатори">Interactive Simulators</span>
+          <span data-en="Interactive Learning Tools &" data-bg="Интерактивни образователни среди и">Interactive Learning Tools &</span><br>
+          <span class="gradient-text" data-en="Educational Software" data-bg="Образователен Софтуер">Educational Software</span>
         </h1>
         
-        <p class="hero-subtitle" data-en="Building gamified learning environments, physics engines, and custom STEM center software installations for secondary schools and academic institutions." data-bg="Изграждане на геймифицирани образователни среди, физични двигатели и софтуерни инсталации за STEM центрове.">
-          Building gamified learning environments, physics engines, and custom STEM center software installations for secondary schools and academic institutions.
+        <p class="hero-subtitle" data-en="Developing interactive learning modules, physics engines, and custom software solutions for secondary schools and academic institutions." data-bg="Разработване на интерактивни образователни модули, физични двигатели и персонализиран софтуер за средни училища и академични институции.">
+          Developing interactive learning modules, physics engines, and custom software solutions for secondary schools and academic institutions.
         </p>
 
         <div class="hero-ctas">
@@ -23,7 +23,7 @@
           </a>
           <a href="projects.php" class="btn btn-secondary">
             <i class="fa-solid fa-layer-group"></i>
-            <span data-en="View STEM Simulators" data-bg="Разгледай Симулаторите">View STEM Simulators</span>
+            <span data-en="View STEM Projects" data-bg="Разгледай Проектите">View STEM Projects</span>
           </a>
         </div>
       </div>

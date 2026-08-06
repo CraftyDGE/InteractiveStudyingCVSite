@@ -74,7 +74,7 @@
               Digital simulator of Edward de Bono's 6 Thinking Hats method for critical thinking, teamwork, and decision making.
             </p>
             <div class="project-footer">
-              <span style="font-size: 0.85rem; color: var(--text-muted);">Interactive JS Engine</span>
+              <span style="font-size: 0.85rem; color: var(--text-muted);">PowerApps</span>
               <button class="demo-btn" onclick="openSimulator('hats')">
                 <span data-en="Launch Live Demo" data-bg="Стартирай Демо">Launch Live Demo</span> <i class="fa-solid fa-arrow-right"></i>
               </button>
@@ -93,7 +93,7 @@
               Real-time HTML5 Canvas mechanics simulator calculating trajectory, angle, velocity, and gravity parameters.
             </p>
             <div class="project-footer">
-              <span style="font-size: 0.85rem; color: var(--text-muted);">HTML5 Canvas</span>
+              <span style="font-size: 0.85rem; color: var(--text-muted);">MIT AppInventor</span>
               <button class="demo-btn" onclick="openSimulator('physics')">
                 <span data-en="Launch Live Demo" data-bg="Стартирай Демо">Launch Live Demo</span> <i class="fa-solid fa-arrow-right"></i>
               </button>

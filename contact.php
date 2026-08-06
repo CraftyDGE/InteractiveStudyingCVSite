@@ -55,8 +55,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <section class="page-banner">
     <div class="container">
       <h1 class="page-title" data-en="Get in Touch" data-bg="Свържете се с нас">Get in Touch</h1>
-      <p class="page-subtitle" data-en="Inquire about secondary school STEM center setups, custom gamification, or academic collaborations." data-bg="Запитвания за STEM центрове в училища, геймификация и академично сътрудничество.">
-        Inquire about secondary school STEM center setups, custom gamification, or academic collaborations.
+      <p class="page-subtitle" data-en="Inquire about custom school gamification, academic collaborations, or general business details." data-bg="Запитвания за геймификация в училища, академично сътрудничество и бизнес партньорства.">
+        Inquire about custom school gamification, academic collaborations, or general business details.
       </p>
     </div>
   </section>
@@ -138,7 +138,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           <div style="margin-bottom: 1.2rem;">
             <label style="display: block; font-weight: 700; margin-bottom: 0.5rem; font-size: 0.9rem;" data-en="Inquiry Category" data-bg="Категория Запитване">Inquiry Category</label>
             <select name="category" style="width: 100%; padding: 12px 16px; border-radius: var(--radius-md); background: var(--bg-primary); border: 1px solid var(--border-color); color: var(--text-primary); font-family: inherit;">
-              <option value="STEM Center Setup" data-en="STEM Center Hardware/Software Setup (Web Services)" data-bg="STEM Център Инсталация (Web Services)">STEM Center Hardware/Software Setup (Web Services)</option>
               <option value="Custom Gamification" data-en="Secondary School Custom Gamification" data-bg="Геймификация за Средни Училища">Secondary School Custom Gamification</option>
               <option value="FEBA Collaboration" data-en="FEBA Academic Collaboration" data-bg="СУ Академично Сътрудничество">FEBA Academic Collaboration</option>
               <option value="General Inquiry" data-en="General Inquiry" data-bg="Общо Запитване">General Inquiry</option>
