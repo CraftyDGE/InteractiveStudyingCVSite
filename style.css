@@ -911,6 +911,9 @@ button {
   .desktop-nav {
     display: none;
   }
+  .header-actions .lang-switch {
+    display: none;
+  }
   .hamburger-btn {
     display: flex;
   }
