@@ -540,13 +540,16 @@ button {
 
 /* Achievement Grid */
 .achievements-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1.5rem;
   margin-top: 2rem;
 }
 
 .achievement-card {
+  flex: 1 1 270px;
+  max-width: 360px;
   background: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
