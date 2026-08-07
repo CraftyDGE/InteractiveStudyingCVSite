@@ -34,12 +34,30 @@
           <button class="lang-btn active" data-lang="en">EN</button>
           <button class="lang-btn" data-lang="bg">BG</button>
         </div>
-        <button class="theme-toggle" id="themeToggle" title="Toggle Light/Dark Theme">
-          <i class="fa-solid fa-moon"></i>
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Open Navigation Menu">
+          <i class="fa-solid fa-bars"></i>
         </button>
       </div>
     </div>
   </header>
+
+  <div class="mobile-drawer-overlay" id="drawerOverlay"></div>
+  <aside class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <a href="index.html" class="logo" style="font-size: 1.15rem;">
+        <div class="logo-icon" style="width:34px; height:34px; font-size: 1rem;"><i class="fa-solid fa-graduation-cap"></i></div>
+        <div class="logo-text">Interactive<span>Studying</span></div>
+      </a>
+      <button class="drawer-close" id="drawerClose">&times;</button>
+    </div>
+
+    <ul class="drawer-nav">
+      <li><a href="index.html" class="drawer-nav-link"><i class="fa-solid fa-house"></i> <span data-en="Home" data-bg="Начало">Home</span></a></li>
+      <li><a href="ceo.html" class="drawer-nav-link active"><i class="fa-solid fa-user-tie"></i> <span data-en="CEO Profile" data-bg="За Управителя">CEO Profile</span></a></li>
+      <li><a href="projects.html" class="drawer-nav-link"><i class="fa-solid fa-layer-group"></i> <span data-en="Simulators & STEM" data-bg="Симулатори и STEM">Simulators & STEM</span></a></li>
+      <li><a href="contact.html" class="drawer-nav-link"><i class="fa-solid fa-envelope"></i> <span data-en="Contact" data-bg="Контакти">Contact</span></a></li>
+    </ul>
+  </aside>
 
   <!-- ==========================================================================
        Executive Hero Section

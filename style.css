@@ -177,7 +177,7 @@ button {
 }
 
 /* Desktop Nav Links */
-.desktop-nav {
+.desktop-nav, .nav-links {
   display: flex;
   align-items: center;
   gap: 2rem;
@@ -920,8 +920,9 @@ button {
 /* ==========================================================================
    Responsive Breakpoints & Reactive Drawer
    ========================================================================== */
-@media (max-width: 992px) {
-  .desktop-nav {
+/* Header menu transitions to hamburger drawer earlier (at 1150px window scaling breakpoint) */
+@media (max-width: 1150px) {
+  .desktop-nav, .nav-links {
     display: none;
   }
   .header-actions .lang-switch {
@@ -930,6 +931,9 @@ button {
   .hamburger-btn {
     display: flex;
   }
+}
+
+@media (max-width: 992px) {
   .hero-content-grid {
     grid-template-columns: 1fr;
     text-align: center;

@@ -1,0 +1,10 @@
+# Force HTTPS Redirection
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Prevent Directory Browsing
+Options -Indexes
+
+# Set UTF-8 Encoding
+AddDefaultCharset UTF-8
