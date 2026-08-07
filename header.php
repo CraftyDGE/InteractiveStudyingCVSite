@@ -37,7 +37,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
 
       <!-- Desktop Navigation Links -->
       <nav>
-        <ul class="desktop-nav">
+        <ul class="desktop-nav nav-links">
           <li><a href="index.php" class="nav-link <?php echo ($current_page === 'index.php' || $current_page === '') ? 'active' : ''; ?>" data-en="Home" data-bg="Начало"><?php echo $lang === 'bg' ? 'Начало' : 'Home'; ?></a></li>
           <li><a href="ceo.php" class="nav-link <?php echo ($current_page === 'ceo.php') ? 'active' : ''; ?>" data-en="CEO Profile" data-bg="За Управителя"><?php echo $lang === 'bg' ? 'За Управителя' : 'CEO Profile'; ?></a></li>
           <li><a href="projects.php" class="nav-link <?php echo ($current_page === 'projects.php') ? 'active' : ''; ?>" data-en="Simulators & STEM" data-bg="Симулатори и STEM"><?php echo $lang === 'bg' ? 'Симулатори и STEM' : 'Simulators & STEM'; ?></a></li>
