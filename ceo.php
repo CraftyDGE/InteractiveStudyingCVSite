@@ -42,8 +42,8 @@
           <span class="gradient-text" data-en="Digital Business & EdTech" data-bg="Дигиталния Бизнес и EdTech">Digital Business & EdTech</span>
         </h1>
 
-        <p style="color: var(--text-secondary); font-size: 1.1rem; margin-bottom: 1.8rem; line-height: 1.7;" data-en="Business Administration scholar at Sofia University 'St. Kliment Ohridski' with a strong background in innovation, artificial intelligence, and entrepreneurship. Founder and CEO of Interactive Studying, Junior Expert at the Centre for Research and Analysis, and award winner at international business competitions in New York." data-bg="Студент по Бизнес администрация в СУ „Св. Климент Охридски“ с изявен интерес към иновациите, изкуствения интелект и предприемачеството. Собственик и управител на „Интерактив Стъдинг“ ЕООД, млад експерт в ЦИА и носител на отличия от Ню Йорк.">
-          Business Administration scholar at Sofia University 'St. Kliment Ohridski' with a strong background in innovation, artificial intelligence, and entrepreneurship. Founder and CEO of Interactive Studying, Junior Expert at the Centre for Research and Analysis, and award winner at international business competitions in New York.
+        <p style="color: var(--text-secondary); font-size: 1.1rem; margin-bottom: 1.8rem; line-height: 1.7;" data-en="Business Administration scholar at Sofia University 'St. Kliment Ohridski' with a strong background in innovation, artificial intelligence, and entrepreneurship. Founder and CEO of Interactive Studying, Junior Expert at the Centre for Research and Analysis, award winner at international business competitions in New York, and 1st Place award holder at TF FEST Plovdiv." data-bg="Студент по Бизнес администрация в СУ „Св. Климент Охридски“ с изявен интерес към иновациите, изкуствения интелект и предприемачеството. Собственик и управител на „Интерактив Стъдинг“ ЕООД, млад експерт в ЦИА, носител на отличия от Ню Йорк и 1-во място на ТФ ФЕСТ Пловдив.">
+          Business Administration scholar at Sofia University 'St. Kliment Ohridski' with a strong background in innovation, artificial intelligence, and entrepreneurship. Founder and CEO of Interactive Studying, Junior Expert at the Centre for Research and Analysis, award winner at international business competitions in New York, and 1st Place award holder at TF FEST Plovdiv.
         </p>
 
         <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
@@ -89,21 +89,21 @@
           </p>
         </div>
 
-        <!-- 3. Founded Interactive Studying -->
+        <!-- 3. Plovdiv TF Fest 1st Place -->
+        <div class="achievement-card">
+          <div class="achievement-icon" style="color: #ec4899; background: rgba(236,72,153,0.1);"><i class="fa-solid fa-award"></i></div>
+          <h4 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem;" data-en="1st Place — TF Fest Plovdiv" data-bg="1-во място — ТФ Фест Пловдив">1st Place — TF Fest Plovdiv</h4>
+          <p style="color: var(--text-secondary); font-size: 0.9rem;" data-en="Awarded 1st Place for Digital Marketing & Presentation Skills at the International Practice Firms Fair (TF Fest Plovdiv), alongside multiple national awards." data-bg="1-во място за Дигитален маркетинг и презентационни умения на ТФ Фест Пловдив, заедно с множество национални отличия.">
+            Awarded 1st Place for Digital Marketing & Presentation Skills at the International Practice Firms Fair (TF Fest Plovdiv), alongside multiple national awards.
+          </p>
+        </div>
+
+        <!-- 4. Founded Interactive Studying -->
         <div class="achievement-card">
           <div class="achievement-icon" style="color: var(--accent-primary); background: rgba(99,102,241,0.1);"><i class="fa-solid fa-building"></i></div>
           <h4 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem;" data-en="Founded Interactive Studying" data-bg="Основател на „Интерактив Стъдинг“ ЕООД">Founded Interactive Studying</h4>
           <p style="color: var(--text-secondary); font-size: 0.9rem;" data-en="Registered commercial enterprise specialized in innovative educational technologies, business planning, and gamification." data-bg="Регистрирано търговско дружество за иновативни образователни технологии, бизнес планиране и геймификация.">
             Registered commercial enterprise specialized in innovative educational technologies, business planning, and gamification.
-          </p>
-        </div>
-
-        <!-- 4. Web Services STEM Partner -->
-        <div class="achievement-card">
-          <div class="achievement-icon" style="color: var(--accent-emerald); background: rgba(16,185,129,0.1);"><i class="fa-solid fa-microchip"></i></div>
-          <h4 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem;" data-en="Web Services STEM Partner" data-bg="Партньор на Web Services">Web Services STEM Partner</h4>
-          <p style="color: var(--text-secondary); font-size: 0.9rem;" data-en="Official partner of Web Services for hardware and software installations at STEM centers in 20+ secondary schools in Bulgaria." data-bg="Официален партньор на Web Services за хардуерни и софтуерни инсталации в STEM центрове на над 20 средни училища.">
-            Official partner of Web Services for hardware and software installations at STEM centers in 20+ secondary schools in Bulgaria.
           </p>
         </div>
       </div>
@@ -164,16 +164,16 @@
           </div>
         </div>
 
-        <!-- 4. Sofia University Education -->
+        <!-- 4. Sofia University Education & Research -->
         <div class="timeline-item">
           <div class="timeline-dot"></div>
           <div class="timeline-card">
             <div class="timeline-date">2024 – PRESENT</div>
-            <h3 class="timeline-title" data-en="B.S. Business Administration" data-bg="Бакалавър по Бизнес Администрация">B.S. Business Administration</h3>
+            <h3 class="timeline-title" data-en="B.S. Business Administration & Academic Author" data-bg="Бакалавър по Бизнес Администрация и Автор">B.S. Business Administration & Academic Author</h3>
             <div class="timeline-company">Sofia University "St. Kliment Ohridski", FEBA</div>
             <ul class="timeline-bullets">
+              <li data-en="Author of formal publication: 'Practices and Motivations for Artificial Intelligence Implementation in Bulgarian Commercial Enterprises' („Практики и мотивации за използване на изкуствен интелект в българския бизнес“)." data-bg="Автор на публикация: „Практики и мотивации за използване на изкуствен интелект в българския бизнес“.">Author of formal publication: 'Practices and Motivations for Artificial Intelligence Implementation in Bulgarian Commercial Enterprises' („Практики и мотивации за използване на изкуствен интелект в българския бизнес“).</li>
               <li data-en="Active participant in Erasmus+ project 'Learn.Inc' (Incubator for Teaching & Learning through Research Projects)." data-bg="Участие в международния проект „Learn.Inc“ по програма „Еразъм+“.">Active participant in Erasmus+ project 'Learn.Inc' (Incubator for Teaching & Learning through Research Projects).</li>
-              <li data-en="Author of academic study analyzing AI implementation motivations in Bulgarian enterprises." data-bg="Автор на научно изследване за практиките на използване на изкуствен интелект в българския бизнес.">Author of academic study analyzing AI implementation motivations in Bulgarian enterprises.</li>
             </ul>
           </div>
         </div>
@@ -187,6 +187,7 @@
             <div class="timeline-company">National Trade and Banking High School (NTBG), Sofia</div>
             <ul class="timeline-bullets">
               <li data-en="3rd Place Winner at Global Innovation Challenge (New York, 2023) for IKEA corporate business case." data-bg="3-то място на Global Innovation Challenge (Ню Йорк, 2023) за бизнес казус на IKEA.">3rd Place Winner at Global Innovation Challenge (New York, 2023) for IKEA corporate business case.</li>
+              <li data-en="1st Place Award Winner for Digital Marketing & Presentation Skills at TF Fest Plovdiv, alongside multiple national and school awards." data-bg="1-во място за Дигитален маркетинг и презентационни умения на ТФ Фест Пловдив и редица национални и училищни награди.">1st Place Award Winner for Digital Marketing & Presentation Skills at TF Fest Plovdiv, alongside multiple national and school awards.</li>
               <li data-en="Co-founded the original student practice firm 'Interactive Studying' which laid the foundation for the 2026 enterprise." data-bg="Ключов участник в учебната фирма „Интерактив стъдинг“, послужила за основа на реалната фирма.">Co-founded the original student practice firm 'Interactive Studying' which laid the foundation for the 2026 enterprise.</li>
             </ul>
           </div>

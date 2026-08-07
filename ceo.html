@@ -3,25 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Deyan Yalamov — CEO & Founder | Interactive Studying</title>
-  <meta name="description" content="Official executive profile for Deyan Yalamov, Founder & CEO of Interactive Studying and Teaching Assistant at FEBA, Sofia University.">
+  <title>Deyan Yalamov — Founder & CEO Profile | Interactive Studying</title>
+  <meta name="description" content="Executive resume and career trajectory of Deyan Yalamov, Founder & CEO of Interactive Studying, FEBA Teaching Assistant, and Junior Expert at CIA.">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-  <!-- ==========================================================================
-       Header & Navigation
-       ========================================================================== -->
+  <!-- Navigation Bar -->
   <header class="header">
     <div class="container header-container">
       <a href="index.html" class="logo">
-        <div class="logo-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+        <img src="logo.svg" alt="Interactive Studying Logo" class="logo-img" onerror="this.src='logo.png'">
         <div class="logo-text">Interactive<span>Studying</span></div>
       </a>
 
       <nav>
-        <ul class="nav-links">
+        <ul class="desktop-nav">
           <li><a href="index.html" class="nav-link" data-en="Home" data-bg="Начало">Home</a></li>
           <li><a href="ceo.html" class="nav-link active" data-en="CEO Profile" data-bg="За Управителя">CEO Profile</a></li>
           <li><a href="projects.html" class="nav-link" data-en="Simulators & STEM" data-bg="Симулатори и STEM">Simulators & STEM</a></li>
@@ -34,9 +32,11 @@
           <button class="lang-btn active" data-lang="en">EN</button>
           <button class="lang-btn" data-lang="bg">BG</button>
         </div>
+
         <button class="theme-toggle" id="themeToggle" title="Toggle Light/Dark Theme">
           <i class="fa-solid fa-moon"></i>
         </button>
+
         <button class="hamburger-btn" id="hamburgerBtn" aria-label="Open Navigation Menu">
           <i class="fa-solid fa-bars"></i>
         </button>
@@ -44,31 +44,38 @@
     </div>
   </header>
 
+  <!-- Reactive Mobile Slide-Out Drawer Navigation -->
   <div class="mobile-drawer-overlay" id="drawerOverlay"></div>
   <aside class="mobile-drawer" id="mobileDrawer">
     <div class="drawer-header">
       <a href="index.html" class="logo" style="font-size: 1.15rem;">
-        <div class="logo-icon" style="width:34px; height:34px; font-size: 1rem;"><i class="fa-solid fa-graduation-cap"></i></div>
+        <img src="logo.svg" alt="Interactive Studying Logo" class="logo-img" style="height: 34px;" onerror="this.src='logo.png'">
         <div class="logo-text">Interactive<span>Studying</span></div>
       </a>
       <button class="drawer-close" id="drawerClose">&times;</button>
     </div>
 
     <ul class="drawer-nav">
-      <li><a href="index.html" class="drawer-nav-link"><i class="fa-solid fa-house"></i> <span data-en="Home" data-bg="Начало">Home</span></a></li>
-      <li><a href="ceo.html" class="drawer-nav-link active"><i class="fa-solid fa-user-tie"></i> <span data-en="CEO Profile" data-bg="За Управителя">CEO Profile</span></a></li>
-      <li><a href="projects.html" class="drawer-nav-link"><i class="fa-solid fa-layer-group"></i> <span data-en="Simulators & STEM" data-bg="Симулатори и STEM">Simulators & STEM</span></a></li>
-      <li><a href="contact.html" class="drawer-nav-link"><i class="fa-solid fa-envelope"></i> <span data-en="Contact" data-bg="Контакти">Contact</span></a></li>
+      <li><a href="index.html" class="drawer-nav-link"><i class="fa-solid fa-house"></i><span data-en="Home" data-bg="Начало">Home</span></a></li>
+      <li><a href="ceo.html" class="drawer-nav-link active"><i class="fa-solid fa-user-tie"></i><span data-en="CEO Profile" data-bg="За Управителя">CEO Profile</span></a></li>
+      <li><a href="projects.html" class="drawer-nav-link"><i class="fa-solid fa-layer-group"></i><span data-en="Simulators & STEM" data-bg="Симулатори и STEM">Simulators & STEM</span></a></li>
+      <li><a href="contact.html" class="drawer-nav-link"><i class="fa-solid fa-envelope"></i><span data-en="Contact" data-bg="Контакти">Contact</span></a></li>
     </ul>
+
+    <div style="margin-top: auto; padding-top: 2rem; border-top: 1px solid var(--border-color);">
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <span style="font-weight: 700; font-size: 0.9rem;" data-en="Language" data-bg="Език">Language</span>
+        <div class="lang-switch">
+          <button class="lang-btn active" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="bg">BG</button>
+        </div>
+      </div>
+    </div>
   </aside>
 
-  <!-- ==========================================================================
-       Executive Hero Section
-       ========================================================================== -->
+  <!-- Executive Hero Section -->
   <section class="ceo-hero">
     <div class="container ceo-grid">
-      
-      <!-- Portrait & Direct Contact Info -->
       <div class="ceo-portrait-card">
         <div class="ceo-avatar">
           <i class="fa-solid fa-user-tie"></i>
@@ -97,21 +104,20 @@
         </div>
       </div>
 
-      <!-- Executive Overview -->
       <div>
         <h1 style="font-size: 3rem; font-weight: 800; margin-bottom: 1rem;">
           <span data-en="Leading Innovation in" data-bg="Лидерство в иновациите на">Leading Innovation in</span><br>
           <span class="gradient-text" data-en="Digital Business & EdTech" data-bg="Дигиталния Бизнес и EdTech">Digital Business & EdTech</span>
         </h1>
 
-        <p style="color: var(--text-secondary); font-size: 1.1rem; margin-bottom: 1.8rem; line-height: 1.7;" data-en="Business Administration scholar at Sofia University 'St. Kliment Ohridski' with a strong background in innovation, artificial intelligence, and entrepreneurship. Founder and CEO of Interactive Studying, Junior Expert at the Centre for Research and Analysis, and award winner at international business competitions in New York." data-bg="Студент по Бизнес администрация в СУ „Св. Климент Охридски“ с изявен интерес към иновациите, изкуствения интелект и предприемачеството. Собственик и управител на „Интерактив Стъдинг“ ЕООД, млад експерт в ЦИА и носител на отличия от Ню Йорк.">
-          Business Administration scholar at Sofia University 'St. Kliment Ohridski' with a strong background in innovation, artificial intelligence, and entrepreneurship. Founder and CEO of Interactive Studying, Junior Expert at the Centre for Research and Analysis, and award winner at international business competitions in New York.
+        <p style="color: var(--text-secondary); font-size: 1.1rem; margin-bottom: 1.8rem; line-height: 1.7;" data-en="Business Administration scholar at Sofia University 'St. Kliment Ohridski' with a strong background in innovation, artificial intelligence, and entrepreneurship. Founder and CEO of Interactive Studying, Junior Expert at the Centre for Research and Analysis, award winner at international business competitions in New York, and 1st Place award holder at TF FEST Plovdiv." data-bg="Студент по Бизнес администрация в СУ „Св. Климент Охридски“ с изявен интерес към иновациите, изкуствения интелект и предприемачеството. Собственик и управител на „Интерактив Стъдинг“ ЕООД, млад експерт в ЦИА, носител на отличия от Ню Йорк и 1-во място на ТФ ФЕСТ Пловдив.">
+          Business Administration scholar at Sofia University 'St. Kliment Ohridski' with a strong background in innovation, artificial intelligence, and entrepreneurship. Founder and CEO of Interactive Studying, Junior Expert at the Centre for Research and Analysis, award winner at international business competitions in New York, and 1st Place award holder at TF FEST Plovdiv.
         </p>
 
         <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
           <a href="contact.html" class="btn btn-primary">
-            <i class="fa-solid fa-calendar-check"></i>
-            <span data-en="Schedule Consultation" data-bg="Заяви Консултация">Schedule Consultation</span>
+            <i class="fa-solid fa-envelope"></i>
+            <span data-en="Contact" data-bg="Контакти">Contact</span>
           </a>
           <a href="projects.html" class="btn btn-secondary">
             <i class="fa-solid fa-layer-group"></i>
@@ -122,9 +128,7 @@
     </div>
   </section>
 
-  <!-- ==========================================================================
-       Key Achievements Grid
-       ========================================================================== -->
+  <!-- Key Achievements Grid -->
   <section class="section" style="background: var(--bg-secondary);">
     <div class="container">
       <div class="section-header">
@@ -133,7 +137,6 @@
       </div>
 
       <div class="achievements-grid">
-        <!-- 1. Teaching Assistant FEBA -->
         <div class="achievement-card">
           <div class="achievement-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
           <h4 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem;" data-en="FEBA Teaching Assistant" data-bg="Преподавателски Асистент в СУ">FEBA Teaching Assistant</h4>
@@ -142,7 +145,6 @@
           </p>
         </div>
 
-        <!-- 2. Global Innovation Challenge NY -->
         <div class="achievement-card">
           <div class="achievement-icon" style="color: var(--accent-amber); background: rgba(245,158,11,0.1);"><i class="fa-solid fa-trophy"></i></div>
           <h4 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem;" data-en="3rd Place — New York 2023" data-bg="3-то място — Ню Йорк 2023">3rd Place — New York 2023</h4>
@@ -151,7 +153,14 @@
           </p>
         </div>
 
-        <!-- 3. Founded Interactive Studying -->
+        <div class="achievement-card">
+          <div class="achievement-icon" style="color: #ec4899; background: rgba(236,72,153,0.1);"><i class="fa-solid fa-award"></i></div>
+          <h4 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem;" data-en="1st Place — TF Fest Plovdiv" data-bg="1-во място — ТФ Фест Пловдив">1st Place — TF Fest Plovdiv</h4>
+          <p style="color: var(--text-secondary); font-size: 0.9rem;" data-en="Awarded 1st Place for Digital Marketing & Presentation Skills at the International Practice Firms Fair (TF Fest Plovdiv), alongside multiple national awards." data-bg="1-во място за Дигитален маркетинг и презентационни умения на ТФ Фест Пловдив, заедно с множество национални отличия.">
+            Awarded 1st Place for Digital Marketing & Presentation Skills at the International Practice Firms Fair (TF Fest Plovdiv), alongside multiple national awards.
+          </p>
+        </div>
+
         <div class="achievement-card">
           <div class="achievement-icon" style="color: var(--accent-primary); background: rgba(99,102,241,0.1);"><i class="fa-solid fa-building"></i></div>
           <h4 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem;" data-en="Founded Interactive Studying" data-bg="Основател на „Интерактив Стъдинг“ ЕООД">Founded Interactive Studying</h4>
@@ -159,22 +168,11 @@
             Registered commercial enterprise specialized in innovative educational technologies, business planning, and gamification.
           </p>
         </div>
-
-        <!-- 4. Web Services STEM Partner -->
-        <div class="achievement-card">
-          <div class="achievement-icon" style="color: var(--accent-emerald); background: rgba(16,185,129,0.1);"><i class="fa-solid fa-microchip"></i></div>
-          <h4 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem;" data-en="Web Services STEM Partner" data-bg="Партньор на Web Services">Web Services STEM Partner</h4>
-          <p style="color: var(--text-secondary); font-size: 0.9rem;" data-en="Official partner of Web Services for hardware and software installations at STEM centers in 20+ secondary schools in Bulgaria." data-bg="Официален партньор на Web Services за хардуерни и софтуерни инсталации в STEM центрове на над 20 средни училища.">
-            Official partner of Web Services for hardware and software installations at STEM centers in 20+ secondary schools in Bulgaria.
-          </p>
-        </div>
       </div>
     </div>
   </section>
 
-  <!-- ==========================================================================
-       Timeline & Career History
-       ========================================================================== -->
+  <!-- Timeline -->
   <section class="section">
     <div class="container">
       <div class="section-header">
@@ -183,7 +181,6 @@
       </div>
 
       <div class="timeline">
-        <!-- 1. Teaching Assistant FEBA -->
         <div class="timeline-item">
           <div class="timeline-dot"></div>
           <div class="timeline-card">
@@ -197,7 +194,6 @@
           </div>
         </div>
 
-        <!-- 2. Founder & CEO Interactive Studying -->
         <div class="timeline-item">
           <div class="timeline-dot"></div>
           <div class="timeline-card">
@@ -207,12 +203,10 @@
             <ul class="timeline-bullets">
               <li data-en="Sole owner and manager of registered commercial entity specializing in innovative educational technologies, business planning, and gamification." data-bg="Едноличен собственик и управител на търговско дружество за образователни технологии и геймификация.">Sole owner and manager of registered commercial entity specializing in innovative educational technologies, business planning, and gamification.</li>
               <li data-en="Full operational & strategic governance, business negotiation, budgeting, and legal/accounting oversight." data-bg="Цялостно оперативно и стратегическо управление, водене на бизнес преговори, бюджетиране и правен надзор.">Full operational & strategic governance, business negotiation, budgeting, and legal/accounting oversight.</li>
-              <li data-en="Development and commercialization of Game-Based Learning programs and entrepreneurship lessons using Minecraft Edu." data-bg="Разработване и комерсиализация на геймифицирани програми и уроци по предприемачество чрез Minecraft.">Development and commercialization of Game-Based Learning programs and entrepreneurship lessons using Minecraft Edu.</li>
             </ul>
           </div>
         </div>
 
-        <!-- 3. Junior Expert CIA -->
         <div class="timeline-item">
           <div class="timeline-dot"></div>
           <div class="timeline-card">
@@ -221,26 +215,23 @@
             <div class="timeline-company">Centre for Research and Analysis (ЦИА), Sofia</div>
             <ul class="timeline-bullets">
               <li data-en="Coordination and outreach for EU project 'CHIPS of Europe', fostering youth interest in microelectronics, semiconductors, and STEM." data-bg="Управление и популяризиране на европейския проект „CHIPS of Europe“ за микроелектроника и STEM образование.">Coordination and outreach for EU project 'CHIPS of Europe', fostering youth interest in microelectronics, semiconductors, and STEM.</li>
-              <li data-en="Delivering interactive lectures in secondary schools for tech career orientation." data-bg="Провеждане на интерактивни лекции пред ученици от средни училища за кариерно ориентиране.">Delivering interactive lectures in secondary schools for tech career orientation.</li>
             </ul>
           </div>
         </div>
 
-        <!-- 4. Sofia University Education -->
         <div class="timeline-item">
           <div class="timeline-dot"></div>
           <div class="timeline-card">
             <div class="timeline-date">2024 – PRESENT</div>
-            <h3 class="timeline-title" data-en="B.S. Business Administration" data-bg="Бакалавър по Бизнес Администрация">B.S. Business Administration</h3>
+            <h3 class="timeline-title" data-en="B.S. Business Administration & Academic Author" data-bg="Бакалавър по Бизнес Администрация и Автор">B.S. Business Administration & Academic Author</h3>
             <div class="timeline-company">Sofia University "St. Kliment Ohridski", FEBA</div>
             <ul class="timeline-bullets">
-              <li data-en="Active participant in Erasmus+ project 'Learn.Inc' (Incubator for Teaching & Learning through Research Projects)." data-bg="Участие в международния проект „Learn.Inc“ по програма „Еразъм+“.">Active participant in Erasmus+ project 'Learn.Inc' (Incubator for Teaching & Learning through Research Projects).</li>
-              <li data-en="Author of academic study analyzing AI implementation motivations in Bulgarian enterprises." data-bg="Автор на научно изследване за практиките на използване на изкуствен интелект в българския бизнес.">Author of academic study analyzing AI implementation motivations in Bulgarian enterprises.</li>
+              <li data-en="Author of formal publication: 'Practices and Motivations for Artificial Intelligence Implementation in Bulgarian Commercial Enterprises' („Практики и мотивации за използване на изкуствен интелект в българския бизнес“)." data-bg="Автор на публикация: „Практики и мотивации за използване на изкуствен интелект в българския бизнес“.">Author of formal publication: 'Practices and Motivations for Artificial Intelligence Implementation in Bulgarian Commercial Enterprises' („Практики и мотивации за използване на изкуствен интелект в българския бизнес“).</li>
+              <li data-en="Active participant in Erasmus+ project 'Learn.Inc'." data-bg="Участие в международния проект „Learn.Inc“ по програма „Еразъм+“.">Active participant in Erasmus+ project 'Learn.Inc'.</li>
             </ul>
           </div>
         </div>
 
-        <!-- 5. NTBG High School -->
         <div class="timeline-item">
           <div class="timeline-dot"></div>
           <div class="timeline-card">
@@ -249,11 +240,10 @@
             <div class="timeline-company">National Trade and Banking High School (NTBG), Sofia</div>
             <ul class="timeline-bullets">
               <li data-en="3rd Place Winner at Global Innovation Challenge (New York, 2023) for IKEA corporate business case." data-bg="3-то място на Global Innovation Challenge (Ню Йорк, 2023) за бизнес казус на IKEA.">3rd Place Winner at Global Innovation Challenge (New York, 2023) for IKEA corporate business case.</li>
-              <li data-en="Co-founded the original student practice firm 'Interactive Studying' which laid the foundation for the 2026 enterprise." data-bg="Ключов участник в учебната фирма „Интерактив стъдинг“, послужила за основа на реалната фирма.">Co-founded the original student practice firm 'Interactive Studying' which laid the foundation for the 2026 enterprise.</li>
+              <li data-en="1st Place Award Winner for Digital Marketing & Presentation Skills at TF Fest Plovdiv, alongside multiple national and school awards." data-bg="1-во място за Дигитален маркетинг и презентационни умения на ТФ Фест Пловдив и редица национални и училищни награди.">1st Place Award Winner for Digital Marketing & Presentation Skills at TF Fest Plovdiv, alongside multiple national and school awards.</li>
             </ul>
           </div>
         </div>
-
       </div>
     </div>
   </section>
@@ -261,8 +251,11 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <div class="footer-logo">Interactive<span style="color: var(--accent-primary);">Studying</span></div>
-      <p class="footer-copy">&copy; 2026 InteractiveStudyingCVSite. Executive Profile for Deyan Yalamov.</p>
+      <a href="index.html" class="logo" style="justify-content: center; margin-bottom: 1rem;">
+        <img src="logo.svg" alt="Interactive Studying Logo" class="logo-img" style="height: 38px;" onerror="this.src='logo.png'">
+        <div class="logo-text">Interactive<span>Studying</span></div>
+      </a>
+      <p class="footer-copy">&copy; 2026 InteractiveStudyingCVSite. All rights reserved.</p>
     </div>
   </footer>
 
