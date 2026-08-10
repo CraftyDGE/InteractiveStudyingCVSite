@@ -28,7 +28,7 @@
         </div>
       </div>
 
-      <!-- CEO & Founder Teaser Card -->
+      <!-- CEO & Founder Teaser Skeleton Card -->
       <div class="hero-visual">
         <div class="avatar-card">
           <div class="avatar-header">
@@ -37,16 +37,18 @@
             </div>
             <div class="avatar-info">
               <h4 data-en="Deyan Yalamov" data-bg="Деян Ялъмов">Deyan Yalamov</h4>
-              <p data-en="Founder & CEO | FEBA Teaching Assistant" data-bg="Основател и Управител | Преподавател в СУ">Founder & CEO | FEBA Teaching Assistant</p>
+              <p data-en="Founder & CEO" data-bg="Основател и Управител">Founder & CEO</p>
             </div>
           </div>
 
-          <p style="margin-bottom: 1.2rem; color: var(--text-secondary); font-size: 0.9rem;" data-en="Teaching Assistant at Sofia University (FEBA), 3rd Place Winner at Global Innovation Challenge in New York (2023), and Web Services STEM Partner across 20+ secondary schools." data-bg="Преподавателски асистент в СУ (Стопански факултет), 3-то място на Global Innovation Challenge в Ню Йорк (2023) и партньор на Web Services за 20+ STEM центъра.">
-            Teaching Assistant at Sofia University (FEBA), 3rd Place Winner at Global Innovation Challenge in New York (2023), and Web Services STEM Partner across 20+ secondary schools.
-          </p>
+          <div style="margin-bottom: 1.5rem; display: flex; flex-direction: column; gap: 0.6rem;">
+            <div style="height: 10px; background: rgba(255,255,255,0.08); border-radius: 6px; width: 100%;"></div>
+            <div style="height: 10px; background: rgba(255,255,255,0.08); border-radius: 6px; width: 85%;"></div>
+            <div style="height: 10px; background: rgba(255,255,255,0.08); border-radius: 6px; width: 65%;"></div>
+          </div>
 
           <a href="ceo.php" class="btn btn-secondary" style="width: 100%; justify-content: center; font-size: 0.85rem; padding: 10px 16px;">
-            <span data-en="View Full Executive Resume" data-bg="Виж Пълното CV">View Full Executive Resume</span>
+            <span data-en="Explore Executive Profile" data-bg="Разгледай Профила">Explore Executive Profile</span>
             <i class="fa-solid fa-arrow-right"></i>
           </a>
         </div>
