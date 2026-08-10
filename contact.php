@@ -139,6 +139,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <label style="display: block; font-weight: 700; margin-bottom: 0.5rem; font-size: 0.9rem;" data-en="Inquiry Category" data-bg="Категория Запитване">Inquiry Category</label>
             <select name="category" style="width: 100%; padding: 12px 16px; border-radius: var(--radius-md); background: var(--bg-primary); border: 1px solid var(--border-color); color: var(--text-primary); font-family: inherit;">
               <option value="Custom Gamification" data-en="Secondary School Custom Gamification" data-bg="Геймификация за Средни Училища">Secondary School Custom Gamification</option>
+              <option value="Office 365 Training" data-en="Office 365 & Digital Productivity Training" data-bg="Обучение по Office 365 и Дигитална Производителност">Office 365 & Digital Productivity Training</option>
               <option value="FEBA Collaboration" data-en="FEBA Academic Collaboration" data-bg="СУ Академично Сътрудничество">FEBA Academic Collaboration</option>
               <option value="General Inquiry" data-en="General Inquiry" data-bg="Общо Запитване">General Inquiry</option>
             </select>

@@ -125,7 +125,6 @@
         <div class="timeline-item">
           <div class="timeline-dot"></div>
           <div class="timeline-card">
-            <div class="timeline-date">2024 – PRESENT</div>
             <h3 class="timeline-title" data-en="Teaching Assistant (Digital Business & Innovations)" data-bg="Преподавателски Асистент (Дигитален Бизнес и Иновации)">Teaching Assistant (Digital Business & Innovations)</h3>
             <div class="timeline-company">FEBA, Sofia University "St. Kliment Ohridski"</div>
             <ul class="timeline-bullets">

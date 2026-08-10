@@ -57,8 +57,8 @@
       <div class="section-header">
         <div class="section-tag" data-en="Software Modules" data-bg="Софтуерни Модули">Software Modules</div>
         <h2 class="section-title" data-en="Interactive Simulators Catalog" data-bg="Каталог с Интерактивни Симулатори">Interactive Simulators Catalog</h2>
-        <p class="section-subtitle" data-en="Click 'Launch Live Demo' to test the simulator engines directly inside your browser!" data-bg="Натиснете 'Стартирай Демо', за да тествате симулаторите директно в браузъра!">
-          Click 'Launch Live Demo' to test the simulator engines directly inside your browser!
+        <p class="section-subtitle" data-en="Software modules and STEM simulator engines developed for secondary school education." data-bg="Софтуерни модули и STEM симулационни системи, разработени за средното образование.">
+          Software modules and STEM simulator engines developed for secondary school education.
         </p>
       </div>
 
@@ -70,14 +70,11 @@
           </div>
           <div class="project-body">
             <h3 class="project-title" data-en="Six Thinking Hats Simulator" data-bg="Симулатор Шест Мислещи Шапки">Six Thinking Hats Simulator</h3>
-            <p class="project-desc" data-en="Digital simulator of Edward de Bono's 6 Thinking Hats method for critical thinking, teamwork, and decision making." data-bg="Симулатор на метода на Едуард де Боно за критично мислене, екипна работа и вземане на решения.">
-              Digital simulator of Edward de Bono's 6 Thinking Hats method for critical thinking, teamwork, and decision making.
+            <p class="project-desc" data-en="Digital simulator of Edward de Bono's 6 Thinking Hats method for critical thinking, teamwork, and decision making. Demonstrated with PowerApps" data-bg="Симулатор на метода на Едуард де Боно за критично мислене, екипна работа и вземане на решения. Демонстрирано с PowerApps">
+              Digital simulator of Edward de Bono's 6 Thinking Hats method for critical thinking, teamwork, and decision making. Demonstrated with PowerApps
             </p>
             <div class="project-footer">
               <span style="font-size: 0.85rem; color: var(--text-muted);">PowerApps</span>
-              <button class="demo-btn" onclick="openSimulator('hats')">
-                <span data-en="Launch Live Demo" data-bg="Стартирай Демо">Launch Live Demo</span> <i class="fa-solid fa-arrow-right"></i>
-              </button>
             </div>
           </div>
         </div>
@@ -94,9 +91,6 @@
             </p>
             <div class="project-footer">
               <span style="font-size: 0.85rem; color: var(--text-muted);">MIT AppInventor</span>
-              <button class="demo-btn" onclick="openSimulator('physics')">
-                <span data-en="Launch Live Demo" data-bg="Стартирай Демо">Launch Live Demo</span> <i class="fa-solid fa-arrow-right"></i>
-              </button>
             </div>
           </div>
         </div>
@@ -113,8 +107,27 @@
             </p>
             <div class="project-footer">
               <span style="font-size: 0.85rem; color: var(--text-muted);">Gamified Curricula</span>
-              <button class="demo-btn" onclick="openSimulator('stem')">
+              <button class="demo-btn" onclick="openSimulator('minecraft')">
                 <span data-en="Launch Live Demo" data-bg="Стартирай Демо">Launch Live Demo</span> <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Office 365 & Digital Productivity Workshops -->
+        <div class="project-card">
+          <div class="project-thumb">
+            <i class="fa-solid fa-users-rectangle" style="color: #0284c7;"></i>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title" data-en="Office 365 & Digital Productivity Workshops" data-bg="Обучения по Office 365 и Дигитална Производителност">Office 365 & Digital Productivity Workshops</h3>
+            <p class="project-desc" data-en="Comprehensive institutional and corporate training workshops covering the Microsoft 365 suite (Teams, PowerApps, SharePoint, Excel, Word, Outlook, OneDrive) tailored for secondary school teachers, academic faculties, and corporate teams." data-bg="Институционални и корпоративни практически обучения за пакета Microsoft 365 (Teams, PowerApps, SharePoint, Excel, Word, Outlook, OneDrive), пригодени за преподаватели в средни училища, академични екипи и бизнес среди.">
+              Comprehensive institutional and corporate training workshops covering the Microsoft 365 suite (Teams, PowerApps, SharePoint, Excel, Word, Outlook, OneDrive) tailored for secondary school teachers, academic faculties, and corporate teams.
+            </p>
+            <div class="project-footer">
+              <span style="font-size: 0.85rem; color: var(--text-muted);">Microsoft 365 Curricula</span>
+              <button class="demo-btn" onclick="openSimulator('o365')">
+                <span data-en="View Workshop Modules" data-bg="Виж Обучителни Модули">View Workshop Modules</span> <i class="fa-solid fa-arrow-right"></i>
               </button>
             </div>
           </div>

@@ -183,6 +183,40 @@ function openSimulator(type) {
         </a>
       </div>
     `;
+  } else if (type === 'o365') {
+    const lang = document.documentElement.getAttribute('lang') || 'en';
+    title.innerText = lang === 'bg' ? 'Обучения за Office 365 и Дигитална Производителност' : 'Office 365 & Digital Productivity Workshops';
+    subtitle.innerText = lang === 'bg' ? 'Преглед на обучителните модули за училища и организации' : 'Interactive overview of training modules for educational and corporate entities';
+    body.innerHTML = `
+      <div style="display: flex; flex-direction: column; gap: 1rem; text-align: left;">
+        <div style="background: var(--bg-primary); padding: 1.2rem; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+          <h4 style="color: #0284c7; margin-bottom: 0.4rem; font-size: 1.05rem;">
+            <i class="fa-solid fa-graduation-cap"></i> ${lang === 'bg' ? 'Модул 1: Интеграция в Училищна Среда (Teams & SharePoint)' : 'Module 1: Educational Integration (Teams & SharePoint)'}
+          </h4>
+          <p style="font-size: 0.88rem; color: var(--text-secondary);">
+            ${lang === 'bg' 
+              ? 'Обучения за учители и администратори за създаване на дигитални класни стаи, споделяне на ресурси и провеждане на онлайн и хибридни уроци.' 
+              : 'Train-the-trainer workshops for educators and staff to manage digital classrooms, collaborative document hubs, and hybrid assignment workflows.'}
+          </p>
+        </div>
+
+        <div style="background: var(--bg-primary); padding: 1.2rem; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+          <h4 style="color: #0284c7; margin-bottom: 0.4rem; font-size: 1.05rem;">
+            <i class="fa-solid fa-chart-line"></i> ${lang === 'bg' ? 'Модул 2: Автоматизация & Low-Code (PowerApps & Excel)' : 'Module 2: Business Automation & Low-Code (PowerApps & Excel)'}
+          </h4>
+          <p style="font-size: 0.88rem; color: var(--text-secondary);">
+            ${lang === 'bg' 
+              ? 'Практически умения за създаване на училищни/бизнес приложения с PowerApps и сложни анализи и автоматизация в Excel.' 
+              : 'Hands-on creation of custom low-code forms and school management apps via PowerApps, paired with advanced data analytics in Excel.'}
+          </p>
+        </div>
+
+        <a href="contact.php" class="btn btn-primary" style="justify-content: center; margin-top: 0.5rem;">
+          <i class="fa-solid fa-envelope"></i>
+          <span>${lang === 'bg' ? 'Заяви Обучение за Вашата Институция' : 'Request Workshop for Your Institution'}</span>
+        </a>
+      </div>
+    `;
   }
 }
 
