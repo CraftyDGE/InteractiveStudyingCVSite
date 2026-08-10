@@ -1,4 +1,4 @@
-<?php include 'header.php'; ?>
+﻿<?php include 'header.php'; ?>
 
   <!-- Page Banner -->
   <section class="page-banner">
@@ -16,44 +16,24 @@
   <section class="section">
     <div class="container">
       <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-xl); padding: 3rem; margin-bottom: 4rem;">
-        <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 3rem; align-items: center;">
-          <div>
-            <div class="section-tag" data-en="Official Infrastructure Partner" data-bg="Официален Инфраструктурен Партньор">Official Infrastructure Partner</div>
-            <h2 style="font-size: 2.2rem; font-weight: 800; margin-bottom: 1rem;" data-en="Web Services STEM Center Installations" data-bg="Web Services Инсталации за STEM Центрове">
-              Web Services STEM Center Installations
-            </h2>
-            <p style="color: var(--text-secondary); font-size: 1.05rem; margin-bottom: 1.5rem; line-height: 1.7;" data-en="Interactive Studying is a key partner of Web Services for comprehensive hardware and software installations at STEM centers in more than 20 secondary schools in Bulgaria. We deliver turnkey digital classrooms, interactive laboratory equipment, and custom software setups." data-bg="„Интерактив Стъдинг“ ЕООД е ключов партньор на Web Services за цялостни хардуерни и софтуерни инсталации в STEM центрове в над 20 средни училища в България. Ние осигуряваме дигитални класни стаи, интерактивно оборудване и персонализиран софтуер.">
-              Interactive Studying is a key partner of Web Services for comprehensive hardware and software installations at STEM centers in more than 20 secondary schools in Bulgaria. We deliver turnkey digital classrooms, interactive laboratory equipment, and custom software setups.
-            </p>
-            
-            <div style="display: flex; gap: 2rem; flex-wrap: wrap;">
-              <div>
-                <strong style="font-size: 2.2rem; font-weight: 800; color: var(--accent-primary); display: block;">20+</strong>
-                <span style="font-size: 0.85rem; color: var(--text-muted);" data-en="Secondary Schools" data-bg="Средни Училища">Secondary Schools</span>
-              </div>
-              <div>
-                <strong style="font-size: 2.2rem; font-weight: 800; color: var(--accent-secondary); display: block;">100%</strong>
-                <span style="font-size: 0.85rem; color: var(--text-muted);" data-en="Turnkey Integration" data-bg="Цялостна Интеграция">Turnkey Integration</span>
-              </div>
-              <div>
-                <strong style="font-size: 2.2rem; font-weight: 800; color: var(--accent-emerald); display: block;">Hardware & SW</strong>
-                <span style="font-size: 0.85rem; color: var(--text-muted);" data-en="Web Services Partner" data-bg="Партньор на Web Services">Web Services Partner</span>
-              </div>
+        <div>
+          <div class="section-tag" data-en="Official Infrastructure Partner" data-bg="Официален Инфраструктурен Партньор">Official Infrastructure Partner</div>
+          <h2 style="font-size: 2.2rem; font-weight: 800; margin-bottom: 1rem;" data-en="Web Services STEM Center Installations" data-bg="Web Services Инсталации за STEM Центрове">
+            Web Services STEM Center Installations
+          </h2>
+          <p style="color: var(--text-secondary); font-size: 1.05rem; margin-bottom: 1.8rem; line-height: 1.7; max-width: 900px;" data-en="Interactive Studying is a key partner of Web Services for comprehensive hardware and software installations at STEM centers in more than 20 secondary schools in Bulgaria. We deliver turnkey digital classrooms, interactive laboratory equipment, and custom software setups." data-bg="„Интерактив Стъдийнг“ ЕООД е ключов партньор на Web Services за цялостни хардуерни и софтуерни инсталации в STEM центрове в над 20 средни училища в България. Ние осигуряваме дигитални класни стаи, интерактивно оборудване и персонализиран софтуер.">
+            Interactive Studying is a key partner of Web Services for comprehensive hardware and software installations at STEM centers in more than 20 secondary schools in Bulgaria. We deliver turnkey digital classrooms, interactive laboratory equipment, and custom software setups.
+          </p>
+          
+          <div style="display: flex; gap: 3rem; flex-wrap: wrap;">
+            <div>
+              <strong style="font-size: 2.2rem; font-weight: 800; color: var(--accent-primary); display: block;">20+</strong>
+              <span style="font-size: 0.85rem; color: var(--text-muted);" data-en="Secondary Schools" data-bg="Средни Училища">Secondary Schools</span>
             </div>
-          </div>
-
-          <div style="background: var(--bg-primary); border: 1px solid var(--border-color); padding: 2rem; border-radius: var(--radius-lg); text-align: center;">
-            <div style="width: 70px; height: 70px; border-radius: 50%; background: rgba(99,102,241,0.1); color: var(--accent-primary); display: flex; align-items: center; justify-content: center; font-size: 2rem; margin: 0 auto 1.2rem;">
-              <i class="fa-solid fa-microchip"></i>
+            <div>
+              <strong style="font-size: 2.2rem; font-weight: 800; color: var(--accent-secondary); display: block;">100%</strong>
+              <span style="font-size: 0.85rem; color: var(--text-muted);" data-en="Custom Gamification" data-bg="Персонализирана Геймификация">Custom Gamification</span>
             </div>
-            <h3 style="font-size: 1.3rem; font-weight: 700; margin-bottom: 0.5rem;" data-en="Need STEM Center Setup?" data-bg="Нужда от STEM Инсталация?">Need STEM Center Setup?</h3>
-            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1.5rem;" data-en="Contact us to discuss Web Services hardware/software deployment for your educational institution." data-bg="Свържете се с нас за хардуерно и софтуерно внедряване от Web Services във вашето училище.">
-              Contact us to discuss Web Services hardware/software deployment for your educational institution.
-            </p>
-            <a href="contact.php" class="btn btn-primary" style="width: 100%; justify-content: center;">
-              <i class="fa-solid fa-envelope"></i>
-              <span data-en="Inquire for School" data-bg="Запитване за Училище">Inquire for School</span>
-            </a>
           </div>
         </div>
       </div>
@@ -135,3 +115,4 @@
   </section>
 
 <?php include 'footer.php'; ?>
+

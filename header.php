@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
@@ -20,6 +20,10 @@ $current_page = basename($_SERVER['PHP_SELF']);
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Interactive Studying — EdTech Portal & STEM Simulators</title>
   <meta name="description" content="Official platform portal for Interactive Studying. Founded by Deyan Yalamov. Custom school gamification and STEM center installations.">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -115,3 +119,4 @@ $current_page = basename($_SERVER['PHP_SELF']);
       </div>
     </div>
   </aside>
+

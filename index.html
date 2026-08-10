@@ -1,10 +1,14 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Interactive Studying — EdTech Portal & STEM Simulators</title>
   <meta name="description" content="Official platform portal for Interactive Studying. Founded by Deyan Yalamov. Custom school gamification and STEM center installations.">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -103,8 +107,8 @@
       <div class="hero-visual">
         <div class="avatar-card">
           <div class="avatar-header">
-            <div class="avatar-circle">
-              <i class="fa-solid fa-user-tie"></i>
+            <div class="avatar-circle" style="overflow: hidden; border: 2px solid var(--accent-primary);">
+              <img src="mic-pik-1.jpeg" alt="Deyan Yalamov" style="width: 100%; height: 100%; object-fit: cover; display: block;">
             </div>
             <div class="avatar-info">
               <h4 data-en="Deyan Yalamov" data-bg="Деян Ялъмов">Deyan Yalamov</h4>
@@ -112,11 +116,9 @@
             </div>
           </div>
 
-          <div style="margin-bottom: 1.5rem; display: flex; flex-direction: column; gap: 0.6rem;">
-            <div style="height: 10px; background: rgba(255,255,255,0.08); border-radius: 6px; width: 100%;"></div>
-            <div style="height: 10px; background: rgba(255,255,255,0.08); border-radius: 6px; width: 85%;"></div>
-            <div style="height: 10px; background: rgba(255,255,255,0.08); border-radius: 6px; width: 65%;"></div>
-          </div>
+          <p style="margin-bottom: 1.2rem; color: var(--text-secondary); font-size: 0.9rem;" data-en="Teaching Assistant at Sofia University (FEBA), 3rd Place Winner at Global Innovation Challenge in New York (2023), and Web Services STEM Partner across 20+ secondary schools." data-bg="Преподавателски асистент в СУ (Стопански факултет), 3-то място на Global Innovation Challenge в Ню Йорк (2023) и партньор на Web Services за 20+ STEM центъра.">
+            Teaching Assistant at Sofia University (FEBA), 3rd Place Winner at Global Innovation Challenge in New York (2023), and Web Services STEM Partner across 20+ secondary schools.
+          </p>
 
           <a href="ceo.html" class="btn btn-secondary" style="width: 100%; justify-content: center; font-size: 0.85rem; padding: 10px 16px;">
             <span data-en="Explore Executive Profile" data-bg="Разгледай Профила">Explore Executive Profile</span>
@@ -170,10 +172,11 @@
         <img src="logo.svg" alt="Interactive Studying Logo" class="logo-img" style="height: 38px;" onerror="this.src='logo.png'">
         <div class="logo-text">Interactive<span>Studying</span></div>
       </a>
-      <p class="footer-copy">&copy; 2026 InteractiveStudyingCVSite. All rights reserved.</p>
+      <p class="footer-copy">&copy; 2026 InteractiveStudying. All rights reserved.</p>
     </div>
   </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
+

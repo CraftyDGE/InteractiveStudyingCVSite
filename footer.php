@@ -1,4 +1,4 @@
-  <!-- Interactive Live Demo Modal -->
+﻿  <!-- Interactive Live Demo Modal -->
   <div class="modal" id="simulatorModal">
     <div class="modal-content">
       <button class="modal-close" onclick="closeSimulator()">&times;</button>
@@ -18,10 +18,11 @@
         <img src="logo.svg" alt="Interactive Studying Logo" class="logo-img" style="height: 38px;" onerror="this.src='logo.png'">
         <div class="logo-text">Interactive<span>Studying</span></div>
       </a>
-      <p class="footer-copy">&copy; <?php echo date('Y'); ?> InteractiveStudyingCVSite. All rights reserved.</p>
+      <p class="footer-copy">&copy; <?php echo date('Y'); ?> InteractiveStudying. All rights reserved.</p>
     </div>
   </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
+

@@ -1,4 +1,4 @@
-# Office 365 Trainings & Institutional Digital Productivity Feature Plan
+﻿# Office 365 Trainings & Institutional Digital Productivity Feature Plan
 
 This document provides the complete copy, content structure, and technical instructions for adding a third service card/tab dedicated to **Office 365 Trainings** on the STEM Simulators and Services page (`projects.php` and `projects.html`).
 
@@ -106,3 +106,4 @@ After updating the files locally:
 1. Stage and commit: `git add .; git commit -m "Add Office 365 Training service card and interactive modal"`
 2. Push to remote: `git push origin main`
 3. Execute deployment script: `python deploy.py`
+

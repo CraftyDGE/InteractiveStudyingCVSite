@@ -1,4 +1,4 @@
-<?php include 'header.php'; ?>
+﻿<?php include 'header.php'; ?>
 
   <!-- ==========================================================================
        Executive Hero Section
@@ -8,12 +8,12 @@
       
       <!-- Portrait & Direct Contact Info -->
       <div class="ceo-portrait-card">
-        <div class="ceo-avatar">
-          <i class="fa-solid fa-user-tie"></i>
+        <div class="ceo-avatar" style="overflow: hidden; padding: 0;">
+          <img src="mic-pik-1.jpeg" alt="Deyan Yalamov" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
         </div>
         <h3 style="font-size: 1.6rem; font-weight: 800;" data-en="Deyan Yalamov" data-bg="Деян Ялъмов">Deyan Yalamov</h3>
         <p style="color: var(--accent-primary); font-weight: 700; font-size: 0.95rem; margin-top: 0.2rem;" data-en="Founder & CEO" data-bg="Основател и Управител">Founder & CEO</p>
-        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1.5rem;" data-en="Interactive Studying" data-bg="„Интерактив Стъдинг“ ЕООД">Interactive Studying</p>
+        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1.5rem;" data-en="Interactive Studying" data-bg="„Интерактив Стъдийнг“ ЕООД">Interactive Studying</p>
         
         <div class="ceo-contact-list">
           <div class="ceo-contact-item">
@@ -23,6 +23,10 @@
           <div class="ceo-contact-item">
             <i class="fa-solid fa-envelope"></i>
             <span>deyan.yalamov@gmail.com</span>
+          </div>
+          <div class="ceo-contact-item">
+            <i class="fa-solid fa-envelope-open-text"></i>
+            <span>help@interactivestudying.eu</span>
           </div>
           <div class="ceo-contact-item">
             <i class="fa-solid fa-phone"></i>
@@ -42,7 +46,7 @@
           <span class="gradient-text" data-en="Digital Business & EdTech" data-bg="Дигиталния Бизнес и EdTech">Digital Business & EdTech</span>
         </h1>
 
-        <p style="color: var(--text-secondary); font-size: 1.1rem; margin-bottom: 1.8rem; line-height: 1.7;" data-en="Business Administration scholar at Sofia University 'St. Kliment Ohridski' with a strong background in innovation, artificial intelligence, and entrepreneurship. Founder and CEO of Interactive Studying, Junior Expert at the Centre for Research and Analysis, award winner at international business competitions in New York, and 1st Place award holder at TF FEST Plovdiv." data-bg="Студент по Бизнес администрация в СУ „Св. Климент Охридски“ с изявен интерес към иновациите, изкуствения интелект и предприемачеството. Собственик и управител на „Интерактив Стъдинг“ ЕООД, млад експерт в ЦИА, носител на отличия от Ню Йорк и 1-во място на ТФ ФЕСТ Пловдив.">
+        <p style="color: var(--text-secondary); font-size: 1.1rem; margin-bottom: 1.8rem; line-height: 1.7;" data-en="Business Administration scholar at Sofia University 'St. Kliment Ohridski' with a strong background in innovation, artificial intelligence, and entrepreneurship. Founder and CEO of Interactive Studying, Junior Expert at the Centre for Research and Analysis, award winner at international business competitions in New York, and 1st Place award holder at TF FEST Plovdiv." data-bg="Студент по Бизнес администрация в СУ „Св. Климент Охридски“ с изявен интерес към иновациите, изкуствения интелект и предприемачеството. Собственик и управител на „Интерактив Стъдийнг“ ЕООД, млад експерт в ЦИА, носител на отличия от Ню Йорк и 1-во място на ТФ ФЕСТ Пловдив.">
           Business Administration scholar at Sofia University 'St. Kliment Ohridski' with a strong background in innovation, artificial intelligence, and entrepreneurship. Founder and CEO of Interactive Studying, Junior Expert at the Centre for Research and Analysis, award winner at international business competitions in New York, and 1st Place award holder at TF FEST Plovdiv.
         </p>
 
@@ -101,7 +105,7 @@
         <!-- 4. Founded Interactive Studying -->
         <div class="achievement-card">
           <div class="achievement-icon" style="color: var(--accent-primary); background: rgba(99,102,241,0.1);"><i class="fa-solid fa-building"></i></div>
-          <h4 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem;" data-en="Founded Interactive Studying" data-bg="Основател на „Интерактив Стъдинг“ ЕООД">Founded Interactive Studying</h4>
+          <h4 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem;" data-en="Founded Interactive Studying" data-bg="Основател на „Интерактив Стъдийнг“ ЕООД">Founded Interactive Studying</h4>
           <p style="color: var(--text-secondary); font-size: 0.9rem;" data-en="Registered commercial enterprise specialized in innovative educational technologies, business planning, and gamification." data-bg="Регистрирано търговско дружество за иновативни образователни технологии, бизнес планиране и геймификация.">
             Registered commercial enterprise specialized in innovative educational technologies, business planning, and gamification.
           </p>
@@ -140,7 +144,7 @@
           <div class="timeline-card">
             <div class="timeline-date">04/2026 – PRESENT</div>
             <h3 class="timeline-title" data-en="Founder & General Manager" data-bg="Основател и Управител">Founder & General Manager</h3>
-            <div class="timeline-company" data-en="Interactive Studying" data-bg="„Интерактив Стъдинг“ ЕООД">Interactive Studying</div>
+            <div class="timeline-company" data-en="Interactive Studying" data-bg="„Интерактив Стъдийнг“ ЕООД">Interactive Studying</div>
             <ul class="timeline-bullets">
               <li data-en="Sole owner and manager of registered commercial entity specializing in innovative educational technologies, business planning, and gamification." data-bg="Едноличен собственик и управител на търговско дружество за образователни технологии и геймификация.">Sole owner and manager of registered commercial entity specializing in innovative educational technologies, business planning, and gamification.</li>
               <li data-en="Full operational & strategic governance, business negotiation, budgeting, and legal/accounting oversight." data-bg="Цялостно оперативно и стратегическо управление, водене на бизнес преговори, бюджетиране и правен надзор.">Full operational & strategic governance, business negotiation, budgeting, and legal/accounting oversight.</li>
@@ -187,7 +191,7 @@
             <ul class="timeline-bullets">
               <li data-en="3rd Place Winner at Global Innovation Challenge (New York, 2023) for IKEA corporate business case." data-bg="3-то място на Global Innovation Challenge (Ню Йорк, 2023) за бизнес казус на IKEA.">3rd Place Winner at Global Innovation Challenge (New York, 2023) for IKEA corporate business case.</li>
               <li data-en="1st Place Award Winner for Digital Marketing & Presentation Skills at TF Fest Plovdiv, alongside multiple national and school awards." data-bg="1-во място за Дигитален маркетинг и презентационни умения на ТФ Фест Пловдив и редица национални и училищни награди.">1st Place Award Winner for Digital Marketing & Presentation Skills at TF Fest Plovdiv, alongside multiple national and school awards.</li>
-              <li data-en="Co-founded the original student practice firm 'Interactive Studying' which laid the foundation for the 2026 enterprise." data-bg="Ключов участник в учебната фирма „Интерактив стъдинг“, послужила за основа на реалната фирма.">Co-founded the original student practice firm 'Interactive Studying' which laid the foundation for the 2026 enterprise.</li>
+              <li data-en="Co-founded the original student practice firm 'Interactive Studying' which laid the foundation for the 2026 enterprise." data-bg="Ключов участник в учебната фирма „Интерактив Стъдийнг“, послужила за основа на реалната фирма.">Co-founded the original student practice firm 'Interactive Studying' which laid the foundation for the 2026 enterprise.</li>
             </ul>
           </div>
         </div>
@@ -197,3 +201,4 @@
   </section>
 
 <?php include 'footer.php'; ?>
+

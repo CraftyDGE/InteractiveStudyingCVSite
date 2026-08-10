@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 require_once 'db.php';
 include 'header.php';
 
@@ -32,8 +32,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             }
         }
 
-        // 2. Dispatch email notification to Deyan
-        $to = "deyan.yalamov@gmail.com";
+        // 2. Dispatch email notification to Deyan & Helpdesk
+        $to = "deyan.yalamov@gmail.com, help@interactivestudying.eu";
         $subject = "New Contact Inquiry: $category from $name";
         $body = "Name: $name\nEmail: $email\nCategory: $category\nIP: $ip\n\nMessage:\n$message";
         $headers = "From: webmaster@interactivestudying.eu\r\nReply-To: $email\r\nX-Mailer: PHP/" . phpversion();
@@ -84,7 +84,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <!-- Company & Contact Direct Info -->
         <div>
           <h3 style="font-size: 1.5rem; font-weight: 800; margin-bottom: 1rem;" data-en="Company Details" data-bg="Данни за Дружеството">Company Details</h3>
-          <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1.5rem;" data-en="Direct official contacts for Interactive Studying." data-bg="Директни официални контакти на „Интерактив Стъдинг“ ЕООД.">
+          <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1.5rem;" data-en="Direct official contacts for Interactive Studying." data-bg="Директни официални контакти на „Интерактив Стъдийнг“ ЕООД.">
             Direct official contacts for Interactive Studying.
           </p>
 
@@ -93,15 +93,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
               <div style="width: 44px; height: 44px; border-radius: 50%; background: rgba(99,102,241,0.1); color: var(--accent-primary); display: flex; align-items: center; justify-content: center; font-size: 1.2rem;"><i class="fa-solid fa-building"></i></div>
               <div>
                 <strong style="display: block; font-size: 0.95rem;" data-en="Registered Company" data-bg="Регистрирано Дружество">Registered Company</strong>
-                <span style="font-size: 0.85rem; color: var(--text-secondary);" data-en="Interactive Studying" data-bg="„Интерактив Стъдинг“ ЕООД">Interactive Studying</span>
+                <span style="font-size: 0.85rem; color: var(--text-secondary);" data-en="Interactive Studying" data-bg="„Интерактив Стъдийнг“ ЕООД">Interactive Studying</span>
               </div>
             </div>
 
             <div style="background: var(--bg-card); border: 1px solid var(--border-color); padding: 1.2rem; border-radius: var(--radius-lg); display: flex; gap: 1rem; align-items: center;">
               <div style="width: 44px; height: 44px; border-radius: 50%; background: rgba(6,182,212,0.1); color: var(--accent-secondary); display: flex; align-items: center; justify-content: center; font-size: 1.2rem;"><i class="fa-solid fa-envelope"></i></div>
               <div>
-                <strong style="display: block; font-size: 0.95rem;" data-en="Email Address" data-bg="Имейл Адрес">Email Address</strong>
-                <span style="font-size: 0.85rem; color: var(--text-secondary);">deyan.yalamov@gmail.com</span>
+                <strong style="display: block; font-size: 0.95rem;" data-en="Email Contacts" data-bg="Имейл Контакти">Email Contacts</strong>
+                <span style="font-size: 0.85rem; color: var(--text-secondary); display: block;">deyan.yalamov@gmail.com</span>
+                <span style="font-size: 0.85rem; color: var(--text-secondary); display: block;">help@interactivestudying.eu</span>
               </div>
             </div>
 
@@ -161,3 +162,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   </section>
 
 <?php include 'footer.php'; ?>
+
