@@ -1,4 +1,4 @@
-﻿<?php include 'header.php'; ?>
+<?php include 'header.php'; ?>
 
   <!-- Page Banner -->
   <section class="page-banner">
@@ -54,8 +54,8 @@
           </div>
           <div class="project-body">
             <h3 class="project-title" data-en="Six Thinking Hats Simulator" data-bg="Симулатор Шест Мислещи Шапки">Six Thinking Hats Simulator</h3>
-            <p class="project-desc" data-en="Digital simulator of Edward de Bono's 6 Thinking Hats method for critical thinking, teamwork, and decision making." data-bg="Симулатор на метода на Едуард де Боно за критично мислене, екипна работа и вземане на решения.">
-              Digital simulator of Edward de Bono's 6 Thinking Hats method for critical thinking, teamwork, and decision making.
+            <p class="project-desc" data-en="Digital simulator of Edward de Bono's 6 Thinking Hats method for critical thinking, teamwork, and decision making. Demonstrated with Microsoft PowerApps." data-bg="Симулатор на метода на Едуард де Боно за критично мислене, екипна работа и вземане на решения. Демонстрирано с Microsoft PowerApps.">
+              Digital simulator of Edward de Bono's 6 Thinking Hats method for critical thinking, teamwork, and decision making. Demonstrated with Microsoft PowerApps.
             </p>
             <div class="project-footer">
               <span style="font-size: 0.85rem; color: var(--text-muted);">PowerApps</span>
@@ -63,18 +63,18 @@
           </div>
         </div>
 
-        <!-- Project 2: Physics Vector Launcher -->
+        <!-- Project 2: Electromagnetic Field Mobile Physics App -->
         <div class="project-card">
           <div class="project-thumb">
-            <i class="fa-solid fa-bolt" style="color: #06b6d4;"></i>
+            <i class="fa-solid fa-magnet" style="color: #06b6d4;"></i>
           </div>
           <div class="project-body">
-            <h3 class="project-title" data-en="Physics Vector Launcher" data-bg="Физичен Векторен Симулатор">Physics Vector Launcher</h3>
-            <p class="project-desc" data-en="Real-time HTML5 Canvas mechanics simulator calculating trajectory, angle, velocity, and gravity parameters." data-bg="Симулатор на механизми в реално време, изчисляващ траектория, ъгъл, скорост и гравитация.">
-              Real-time HTML5 Canvas mechanics simulator calculating trajectory, angle, velocity, and gravity parameters.
+            <h3 class="project-title" data-en="EM Field Mobile Physics App" data-bg="Мобилно Приложение по Електромагнетизъм">EM Field Mobile Physics App</h3>
+            <p class="project-desc" data-en="Interactive mobile physics game developed with MIT App Inventor that utilizes the smartphone's internal electromagnetic sensor chip (magnetometer) to detect real-time EM fields and demonstrate physical law applications." data-bg="Интерактивна мобилна игра по физика, създадена с MIT App Inventor, която използва вградения електромагнитен чип (магнетометър) на телефона за измерване на EM полета в реално време и приложение на физичните закони.">
+              Interactive mobile physics game developed with MIT App Inventor that utilizes the smartphone's internal electromagnetic sensor chip (magnetometer) to detect real-time EM fields and demonstrate physical law applications.
             </p>
             <div class="project-footer">
-              <span style="font-size: 0.85rem; color: var(--text-muted);">MIT AppInventor</span>
+              <span style="font-size: 0.85rem; color: var(--text-muted);">MIT App Inventor & Sensors</span>
             </div>
           </div>
         </div>

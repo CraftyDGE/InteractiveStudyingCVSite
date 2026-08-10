@@ -1,4 +1,4 @@
-﻿/* ==========================================================================
+/* ==========================================================================
    Multi-Page Interactive Engine - InteractiveStudyingCVSite (PHP & Reactive)
    ========================================================================== */
 
@@ -152,8 +152,8 @@ function openSimulator(type) {
       </div>
     `;
   } else if (type === 'physics') {
-    title.innerText = 'Physics Vector Launcher - Trajectory Simulator';
-    subtitle.innerText = 'Drag controls below to simulate real-time projectile physics kinematics';
+    title.innerText = 'EM Field Mobile Physics App (MIT App Inventor)';
+    subtitle.innerText = 'Utilizes smartphone electromagnetic sensors (magnetometer) for real-time physics applications';
     body.innerHTML = `
       <canvas id="physicsCanvas" width="600" height="220" style="background: #050811; border-radius: 12px; width: 100%; border: 1px solid var(--border-color);"></canvas>
       <div style="display: flex; gap: 1.5rem; justify-content: center; align-items: center; margin-top: 1rem; flex-wrap: wrap;">

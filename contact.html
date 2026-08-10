@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
@@ -14,18 +14,16 @@
 </head>
 <body>
 
-  <!-- ==========================================================================
-       Header & Navigation
-       ========================================================================== -->
+  <!-- Navigation Bar -->
   <header class="header">
     <div class="container header-container">
       <a href="index.html" class="logo">
-        <div class="logo-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+        <img src="logo.svg" alt="Interactive Studying Logo" class="logo-img" onerror="this.src='logo.png'">
         <div class="logo-text">Interactive<span>Studying</span></div>
       </a>
 
       <nav>
-        <ul class="nav-links">
+        <ul class="desktop-nav">
           <li><a href="index.html" class="nav-link" data-en="Home" data-bg="Начало">Home</a></li>
           <li><a href="ceo.html" class="nav-link" data-en="CEO Profile" data-bg="За Управителя">CEO Profile</a></li>
           <li><a href="projects.html" class="nav-link" data-en="Simulators & STEM" data-bg="Симулатори и STEM">Simulators & STEM</a></li>
@@ -48,39 +46,49 @@
     </div>
   </header>
 
+  <!-- Reactive Mobile Slide-Out Drawer Navigation -->
   <div class="mobile-drawer-overlay" id="drawerOverlay"></div>
   <aside class="mobile-drawer" id="mobileDrawer">
     <div class="drawer-header">
       <a href="index.html" class="logo" style="font-size: 1.15rem;">
-        <div class="logo-icon" style="width:34px; height:34px; font-size: 1rem;"><i class="fa-solid fa-graduation-cap"></i></div>
+        <img src="logo.svg" alt="Interactive Studying Logo" class="logo-img" style="height: 34px;" onerror="this.src='logo.png'">
         <div class="logo-text">Interactive<span>Studying</span></div>
       </a>
       <button class="drawer-close" id="drawerClose">&times;</button>
     </div>
 
     <ul class="drawer-nav">
-      <li><a href="index.html" class="drawer-nav-link"><i class="fa-solid fa-house"></i> <span data-en="Home" data-bg="Начало">Home</span></a></li>
-      <li><a href="ceo.html" class="drawer-nav-link"><i class="fa-solid fa-user-tie"></i> <span data-en="CEO Profile" data-bg="За Управителя">CEO Profile</span></a></li>
-      <li><a href="projects.html" class="drawer-nav-link"><i class="fa-solid fa-layer-group"></i> <span data-en="Simulators & STEM" data-bg="Симулатори и STEM">Simulators & STEM</span></a></li>
-      <li><a href="contact.html" class="drawer-nav-link active"><i class="fa-solid fa-envelope"></i> <span data-en="Contact" data-bg="Контакти">Contact</span></a></li>
+      <li><a href="index.html" class="drawer-nav-link"><i class="fa-solid fa-house"></i><span data-en="Home" data-bg="Начало">Home</span></a></li>
+      <li><a href="ceo.html" class="drawer-nav-link"><i class="fa-solid fa-user-tie"></i><span data-en="CEO Profile" data-bg="За Управителя">CEO Profile</span></a></li>
+      <li><a href="projects.html" class="drawer-nav-link"><i class="fa-solid fa-layer-group"></i><span data-en="Simulators & STEM" data-bg="Симулатори и STEM">Simulators & STEM</span></a></li>
+      <li><a href="contact.html" class="drawer-nav-link active"><i class="fa-solid fa-envelope"></i><span data-en="Contact" data-bg="Контакти">Contact</span></a></li>
     </ul>
+
+    <div style="margin-top: auto; padding-top: 2rem; border-top: 1px solid var(--border-color);">
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <span style="font-weight: 700; font-size: 0.9rem;" data-en="Language" data-bg="Език">Language</span>
+        <div class="lang-switch">
+          <button class="lang-btn active" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="bg">BG</button>
+        </div>
+      </div>
+    </div>
   </aside>
 
   <!-- Page Banner -->
   <section class="page-banner">
     <div class="container">
       <h1 class="page-title" data-en="Get in Touch" data-bg="Свържете се с нас">Get in Touch</h1>
-      <p class="page-subtitle" data-en="Inquire about secondary school STEM center setups, custom gamification, or academic collaborations." data-bg="Запитвания за STEM центрове в училища, геймификация и академично сътрудничество.">
-        Inquire about secondary school STEM center setups, custom gamification, or academic collaborations.
+      <p class="page-subtitle" data-en="Inquire about custom school gamification, academic collaborations, or general business details." data-bg="Запитвания за геймификация в училища, академично сътрудничество и бизнес партньорства.">
+        Inquire about custom school gamification, academic collaborations, or general business details.
       </p>
     </div>
   </section>
 
-  <!-- ==========================================================================
-       Contact Form & Info Layout
-       ========================================================================== -->
+  <!-- Contact Form & Info Layout -->
   <section class="section">
     <div class="container" style="max-width: 1000px;">
+      
       <div style="display: grid; grid-template-columns: 1fr 1.3fr; gap: 3rem;">
         
         <!-- Company & Contact Direct Info -->
@@ -111,31 +119,25 @@
             <div style="background: var(--bg-card); border: 1px solid var(--border-color); padding: 1.2rem; border-radius: var(--radius-lg); display: flex; gap: 1rem; align-items: center;">
               <div style="width: 44px; height: 44px; border-radius: 50%; background: rgba(16,185,129,0.1); color: var(--accent-emerald); display: flex; align-items: center; justify-content: center; font-size: 1.2rem;"><i class="fa-solid fa-phone"></i></div>
               <div>
-                <strong style="display: block; font-size: 0.95rem;" data-en="Phone" data-bg="Телефон">Phone</strong>
+                <strong style="display: block; font-size: 0.95rem;" data-en="Direct Phone" data-bg="Директен Телефон">Direct Phone</strong>
                 <span style="font-size: 0.85rem; color: var(--text-secondary);">+359 89 313 684</span>
-              </div>
-            </div>
-
-            <div style="background: var(--bg-card); border: 1px solid var(--border-color); padding: 1.2rem; border-radius: var(--radius-lg); display: flex; gap: 1rem; align-items: center;">
-              <div style="width: 44px; height: 44px; border-radius: 50%; background: rgba(245,158,11,0.1); color: var(--accent-amber); display: flex; align-items: center; justify-content: center; font-size: 1.2rem;"><i class="fa-solid fa-location-dot"></i></div>
-              <div>
-                <strong style="display: block; font-size: 0.95rem;" data-en="Location" data-bg="Локация">Location</strong>
-                <span style="font-size: 0.85rem; color: var(--text-secondary);" data-en="Sofia, Bulgaria" data-bg="София, България">Sofia, Bulgaria</span>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Interactive Form -->
-        <form id="contactForm" onsubmit="handleContact(event)" style="background: var(--bg-card); border: 1px solid var(--border-color); padding: 2.5rem; border-radius: var(--radius-xl);">
+        <!-- Contact Form -->
+        <form style="background: var(--bg-card); border: 1px solid var(--border-color); padding: 2rem; border-radius: var(--radius-xl);" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+          <h3 style="font-size: 1.5rem; font-weight: 800; margin-bottom: 1.5rem;" data-en="Send a Message" data-bg="Изпратете Съобщение">Send a Message</h3>
+
           <div style="margin-bottom: 1.2rem;">
             <label style="display: block; font-weight: 700; margin-bottom: 0.5rem; font-size: 0.9rem;" data-en="Your Name" data-bg="Вашето Име">Your Name</label>
-            <input type="text" required placeholder="e.g. Deyan Petrov" style="width: 100%; padding: 12px 16px; border-radius: var(--radius-md); background: var(--bg-primary); border: 1px solid var(--border-color); color: var(--text-primary); font-family: inherit;">
+            <input type="text" required placeholder="John Doe" style="width: 100%; padding: 12px 16px; border-radius: var(--radius-md); background: var(--bg-primary); border: 1px solid var(--border-color); color: var(--text-primary); font-family: inherit;">
           </div>
 
           <div style="margin-bottom: 1.2rem;">
-            <label style="display: block; font-weight: 700; margin-bottom: 0.5rem; font-size: 0.9rem;" data-en="Email Address" data-bg="Имейл Адрес">Email Address</label>
-            <input type="email" required placeholder="name@institution.edu" style="width: 100%; padding: 12px 16px; border-radius: var(--radius-md); background: var(--bg-primary); border: 1px solid var(--border-color); color: var(--text-primary); font-family: inherit;">
+            <label style="display: block; font-weight: 700; margin-bottom: 0.5rem; font-size: 0.9rem;" data-en="Your Email" data-bg="Вашият Имейл">Your Email</label>
+            <input type="email" required placeholder="john@example.com" style="width: 100%; padding: 12px 16px; border-radius: var(--radius-md); background: var(--bg-primary); border: 1px solid var(--border-color); color: var(--text-primary); font-family: inherit;">
           </div>
 
           <div style="margin-bottom: 1.2rem;">
@@ -149,7 +151,7 @@
           </div>
 
           <div style="margin-bottom: 1.5rem;">
-            <label style="display: block; font-weight: 700; margin-bottom: 0.5rem; font-size: 0.9rem;" data-en="Message Details" data-bg="Детайли на Съобщението">Message Details</label>
+            <label style="display: block; font-weight: 700; margin-bottom: 0.5rem; font-size: 0.9rem;" data-en="Message Details" data-bg="Подробности">Message Details</label>
             <textarea rows="4" required placeholder="Describe your inquiry..." style="width: 100%; padding: 12px 16px; border-radius: var(--radius-md); background: var(--bg-primary); border: 1px solid var(--border-color); color: var(--text-primary); font-family: inherit; resize: vertical;"></textarea>
           </div>
 
@@ -166,7 +168,10 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <div class="footer-logo">Interactive<span style="color: var(--accent-primary);">Studying</span></div>
+      <a href="index.html" class="logo" style="justify-content: center; margin-bottom: 1rem;">
+        <img src="logo.svg" alt="Interactive Studying Logo" class="logo-img" style="height: 38px;" onerror="this.src='logo.png'">
+        <div class="logo-text">Interactive<span>Studying</span></div>
+      </a>
       <p class="footer-copy">&copy; 2026 InteractiveStudying. All rights reserved.</p>
     </div>
   </footer>
@@ -174,4 +179,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
