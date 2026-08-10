@@ -74,8 +74,8 @@
           </div>
           <div class="project-body">
             <h3 class="project-title" data-en="Six Thinking Hats Simulator" data-bg="Симулатор Шест Мислещи Шапки">Six Thinking Hats Simulator</h3>
-            <p class="project-desc" data-en="Digital simulator of Edward de Bono's 6 Thinking Hats method for critical thinking, teamwork, and decision making. Demonstrated with PowerApps" data-bg="Симулатор на метода на Едуард де Боно за критично мислене, екипна работа и вземане на решения. Демонстрирано с PowerApps">
-              Digital simulator of Edward de Bono's 6 Thinking Hats method for critical thinking, teamwork, and decision making. Demonstrated with PowerApps
+            <p class="project-desc" data-en="Digital simulator of Edward de Bono's 6 Thinking Hats method for critical thinking, teamwork, and decision making." data-bg="Симулатор на метода на Едуард де Боно за критично мислене, екипна работа и вземане на решения.">
+              Digital simulator of Edward de Bono's 6 Thinking Hats method for critical thinking, teamwork, and decision making.
             </p>
             <div class="project-footer">
               <span style="font-size: 0.85rem; color: var(--text-muted);">PowerApps</span>
