@@ -3,63 +3,67 @@
   <!-- Page Banner -->
   <section class="page-banner">
     <div class="container">
-      <h1 class="page-title" data-en="Simulators & School STEM Projects" data-bg="Симулатори и Училищни STEM Проекти">Simulators & School STEM Projects</h1>
-      <p class="page-subtitle" data-en="Delivering custom school gamification and strategic hardware/software installations across secondary schools in Bulgaria." data-bg="Внедряване на персонализирана геймификация и стратегически хардуерни/софтуерни инсталации в българските училища.">
-        Delivering custom school gamification and strategic hardware/software installations across secondary schools in Bulgaria.
+      <h1 class="page-title" data-en="STEM Simulators & Services" data-bg="STEM Симулатори и Услуги">STEM Simulators & Services</h1>
+      <p class="page-subtitle" data-en="Interactive educational tools, custom school gamification, and Web Services STEM center hardware/software installations." data-bg="Интерактивни образователни инструменти, училищна геймификация и инсталации за STEM центрове.">
+        Interactive educational tools, custom school gamification, and Web Services STEM center hardware/software installations.
       </p>
     </div>
   </section>
 
   <!-- ==========================================================================
-       Web Services Partnership Spotlight
-       ========================================================================== -->
-  <section class="section" style="background: var(--bg-secondary);">
-    <div class="container">
-      <div style="background: var(--bg-card); border: 1px solid var(--border-highlight); border-radius: var(--radius-xl); padding: 3rem; box-shadow: var(--shadow-md);">
-        <div style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 2.5rem; align-items: center;">
-          <div>
-            <h2 style="font-size: 2.2rem; font-weight: 800; margin-bottom: 1rem;">
-              <span data-en="Partner of Web Services for" data-bg="Партньор на Web Services за">Partner of Web Services for</span><br>
-              <span class="gradient-text" data-en="20+ STEM Centers" data-bg="Над 20 STEM Центъра">20+ STEM Centers</span>
-            </h2>
-            <p style="color: var(--text-secondary); font-size: 1rem; margin-bottom: 1.5rem;" data-en="Interactive Studying is an official installation and technology partner of Web Services for hardware and software deployments at STEM centers in more than 20 secondary schools in Bulgaria." data-bg="„Интерактив Стъдинг“ е официален партньор на Web Services за хардуерни и софтуерни инсталации в STEM центрове в над 20 средни училища в България.">
-              Interactive Studying is an official installation and technology partner of Web Services for hardware and software deployments at STEM centers in more than 20 secondary schools in Bulgaria.
-            </p>
-            <a href="contact.php" class="btn btn-primary">
-              <i class="fa-solid fa-school"></i>
-              <span data-en="Request STEM Center Setup" data-bg="Заяви STEM Инсталация">Request STEM Center Setup</span>
-            </a>
-          </div>
-
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem;">
-            <div style="background: var(--bg-glass); border: 1px solid var(--border-color); padding: 1.5rem; border-radius: var(--radius-lg);">
-              <h3 style="font-size: 2rem; font-weight: 800; color: var(--accent-emerald);">20+</h3>
-              <p style="font-weight: 700; font-size: 0.95rem; margin-top: 0.2rem;" data-en="Secondary Schools" data-bg="Средни Училища">Secondary Schools</p>
-              <p style="font-size: 0.8rem; color: var(--text-muted);" data-en="Hardware & software setups completed in Bulgaria." data-bg="Завършени инсталации в страната.">Hardware & software setups completed in Bulgaria.</p>
-            </div>
-
-            <div style="background: var(--bg-glass); border: 1px solid var(--border-color); padding: 1.5rem; border-radius: var(--radius-lg);">
-              <h3 style="font-size: 2rem; font-weight: 800; color: var(--accent-secondary);">100%</h3>
-              <p style="font-weight: 700; font-size: 0.95rem; margin-top: 0.2rem;" data-en="Custom Gamification" data-bg="Персонализирана Геймификация">Custom Gamification</p>
-              <p style="font-size: 0.8rem; color: var(--text-muted);" data-en="Tailored interactive scenarios for classes." data-bg="Разработени сценарии за учебни часове.">Tailored interactive scenarios for classes.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================================================================
-       Projects & Interactive Playgrounds
+       Web Services Partnership Overview
        ========================================================================== -->
   <section class="section">
     <div class="container">
+      <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-xl); padding: 3rem; margin-bottom: 4rem;">
+        <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 3rem; align-items: center;">
+          <div>
+            <div class="section-tag" data-en="Official Infrastructure Partner" data-bg="Официален Инфраструктурен Партньор">Official Infrastructure Partner</div>
+            <h2 style="font-size: 2.2rem; font-weight: 800; margin-bottom: 1rem;" data-en="Web Services STEM Center Installations" data-bg="Web Services Инсталации за STEM Центрове">
+              Web Services STEM Center Installations
+            </h2>
+            <p style="color: var(--text-secondary); font-size: 1.05rem; margin-bottom: 1.5rem; line-height: 1.7;" data-en="Interactive Studying is a key partner of Web Services for comprehensive hardware and software installations at STEM centers in more than 20 secondary schools in Bulgaria. We deliver turnkey digital classrooms, interactive laboratory equipment, and custom software setups." data-bg="„Интерактив Стъдинг“ ЕООД е ключов партньор на Web Services за цялостни хардуерни и софтуерни инсталации в STEM центрове в над 20 средни училища в България. Ние осигуряваме дигитални класни стаи, интерактивно оборудване и персонализиран софтуер.">
+              Interactive Studying is a key partner of Web Services for comprehensive hardware and software installations at STEM centers in more than 20 secondary schools in Bulgaria. We deliver turnkey digital classrooms, interactive laboratory equipment, and custom software setups.
+            </p>
+            
+            <div style="display: flex; gap: 2rem; flex-wrap: wrap;">
+              <div>
+                <strong style="font-size: 2.2rem; font-weight: 800; color: var(--accent-primary); display: block;">20+</strong>
+                <span style="font-size: 0.85rem; color: var(--text-muted);" data-en="Secondary Schools" data-bg="Средни Училища">Secondary Schools</span>
+              </div>
+              <div>
+                <strong style="font-size: 2.2rem; font-weight: 800; color: var(--accent-secondary); display: block;">100%</strong>
+                <span style="font-size: 0.85rem; color: var(--text-muted);" data-en="Turnkey Integration" data-bg="Цялостна Интеграция">Turnkey Integration</span>
+              </div>
+              <div>
+                <strong style="font-size: 2.2rem; font-weight: 800; color: var(--accent-emerald); display: block;">Hardware & SW</strong>
+                <span style="font-size: 0.85rem; color: var(--text-muted);" data-en="Web Services Partner" data-bg="Партньор на Web Services">Web Services Partner</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="background: var(--bg-primary); border: 1px solid var(--border-color); padding: 2rem; border-radius: var(--radius-lg); text-align: center;">
+            <div style="width: 70px; height: 70px; border-radius: 50%; background: rgba(99,102,241,0.1); color: var(--accent-primary); display: flex; align-items: center; justify-content: center; font-size: 2rem; margin: 0 auto 1.2rem;">
+              <i class="fa-solid fa-microchip"></i>
+            </div>
+            <h3 style="font-size: 1.3rem; font-weight: 700; margin-bottom: 0.5rem;" data-en="Need STEM Center Setup?" data-bg="Нужда от STEM Инсталация?">Need STEM Center Setup?</h3>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1.5rem;" data-en="Contact us to discuss Web Services hardware/software deployment for your educational institution." data-bg="Свържете се с нас за хардуерно и софтуерно внедряване от Web Services във вашето училище.">
+              Contact us to discuss Web Services hardware/software deployment for your educational institution.
+            </p>
+            <a href="contact.php" class="btn btn-primary" style="width: 100%; justify-content: center;">
+              <i class="fa-solid fa-envelope"></i>
+              <span data-en="Inquire for School" data-bg="Запитване за Училище">Inquire for School</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==========================================================================
+           Interactive Simulators & Gamification Showcase
+           ========================================================================== -->
       <div class="section-header">
-        <div class="section-tag" data-en="Software Modules" data-bg="Софтуерни Модули">Software Modules</div>
-        <h2 class="section-title" data-en="Interactive Simulators Catalog" data-bg="Каталог с Интерактивни Симулатори">Interactive Simulators Catalog</h2>
-        <p class="section-subtitle" data-en="Software modules and STEM simulator engines developed for secondary school education." data-bg="Софтуерни модули и STEM симулационни системи, разработени за средното образование.">
-          Software modules and STEM simulator engines developed for secondary school education.
-        </p>
+        <div class="section-tag" data-en="Simulators & Gamification" data-bg="Симулатори и Геймификация">Simulators & Gamification</div>
+        <h2 class="section-title" data-en="Interactive Educational Modules" data-bg="Интерактивни Образователни Модули">Interactive Educational Modules</h2>
       </div>
 
       <div class="projects-grid">
@@ -107,9 +111,6 @@
             </p>
             <div class="project-footer">
               <span style="font-size: 0.85rem; color: var(--text-muted);">Gamified Curricula</span>
-              <button class="demo-btn" onclick="openSimulator('minecraft')">
-                <span data-en="Launch Live Demo" data-bg="Стартирай Демо">Launch Live Demo</span> <i class="fa-solid fa-arrow-right"></i>
-              </button>
             </div>
           </div>
         </div>
@@ -126,9 +127,6 @@
             </p>
             <div class="project-footer">
               <span style="font-size: 0.85rem; color: var(--text-muted);">Microsoft 365 Curricula</span>
-              <button class="demo-btn" onclick="openSimulator('o365')">
-                <span data-en="View Workshop Modules" data-bg="Виж Обучителни Модули">View Workshop Modules</span> <i class="fa-solid fa-arrow-right"></i>
-              </button>
             </div>
           </div>
         </div>
